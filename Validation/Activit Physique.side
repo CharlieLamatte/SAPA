@@ -1,0 +1,4779 @@
+{
+  "id": "d0ab0150-f041-4d1d-baa5-a5d4d15d68d7",
+  "version": "2.0",
+  "name": "Activité Physique",
+  "url": "https://suivibeneficiairesauto.sportsante86.fr",
+  "tests": [{
+    "id": "46317ccf-0ee5-41db-a91d-c6c39b7df233",
+    "name": "2-Rentrer \"  \" dans Activité Physique antérieure",
+    "commands": [{
+      "id": "4e24ac77-0020-4f92-95db-3ba67d956477",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c10a31db-c45b-49ef-a490-1efd92925d1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b82874-f9b5-4823-bbdc-64b0f87f1b4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "28c44cf4-21b3-428c-bda8-c432fa02af7a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "f48ce921-84b1-4e12-8410-5e5d2b7c1c99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "113ab561-95c3-476b-84aa-1cd37cb55207",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e4df34-7f0f-4734-8501-6a0587e2c05b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be74f079-7b93-4ffc-a60f-3fc44def09dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ec52c30-acee-43de-97b4-c3bd1477b92d",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "ffad8576-c884-432f-8fbc-2e507c163a73",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8c06388d-7eb1-424d-91a4-b6aa2cd6e9ed",
+    "name": "3-Rentrer \"Minuscule\" dans Activité Physique antérieur",
+    "commands": [{
+      "id": "678b861b-da43-45b0-8b5a-7ea77f023207",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38f6ae62-88e1-4cd1-81e7-bd750a57da30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8844b6c3-e67e-42d2-b122-f75a40b113e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "3708ffd6-9e3e-4a9b-a2db-b889d574d47a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "3d192e6e-2804-44ae-9176-773095ca883b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6225be7-bfd6-4db0-b0e1-b5975390b8b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d77e0459-648f-4a62-90c7-3a4de6e30d4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a1b292-6025-4f09-b10f-80e84216aad9",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb26f4e6-d95b-458e-8625-a1cd27232768",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "minus"
+    }, {
+      "id": "e5281e85-f3fe-4b41-949f-bc1d13c9e687",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a60c54b2-4edd-4cf4-8c10-e83720514f96",
+    "name": "4-Rentrer \"Majuscule\" dans Activité Physique antérieur",
+    "commands": [{
+      "id": "ce3a4c93-475c-48cd-b44a-0742844b1b5e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d17f9d9-78f5-4591-bbfa-6f68b2fe7e67",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb44cfd5-0540-4c7f-b160-aac658b17891",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "4aeea290-359f-4f4a-ab58-973e58291221",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "e68dfae4-4e26-4456-a59c-35e2af6a53c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b68abdc-37bd-4465-899d-b164533e9fdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6429f82-7c79-42cc-b5ac-686f34ba6192",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "756aeb39-1d46-430a-bd01-8d03c145d616",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c3cf4d-6cd3-44bb-bc13-97293f4773c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "YMAJ"
+    }, {
+      "id": "3b1bab98-ac0f-4add-aa28-71c3607b070a",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "96f7f1f6-cf91-4e58-af39-cd21281d3105",
+    "name": "5-Rentrer \"Chiffres\" dans Activité Physique antérieur",
+    "commands": [{
+      "id": "a1d8fe6e-e465-48a3-aff1-8a273fbdad9d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6165f70-6d42-4820-ba4a-b460a032ba7d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fed1a66-9f17-4a5d-b8e4-077b01388ebf",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "b02fc2be-574b-40b3-8dad-d54a6aa92678",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "4af5a583-a609-47f0-8ebc-6b22cda37185",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8446d09c-0c16-4223-9c6e-b6fb691ecab6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d84c438a-a4dc-4a56-944b-6c44e3ffd1c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38784e24-7789-4708-9991-2ec15471d43c",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e73fc7d1-fd27-4435-aabd-5ae868fb8775",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-md-12",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-md-12", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33082e99-06fd-4a18-aacf-97d894c5145a",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "566788"
+    }, {
+      "id": "e38b4d1f-ccd7-46b4-9564-248362353495",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3e785908-772e-4b27-943b-d30ae00dcb7c",
+    "name": "6-Rentrer \"$@£\" dans Activité Physique antérieur",
+    "commands": [{
+      "id": "820de02b-c399-4f19-ac4e-722cd015d7db",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81e7c51e-e8fa-4477-9666-446601170e49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bde3bf-c0e1-4b79-b6aa-77f65af60e76",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "25d129d8-fe8c-4399-b5de-308400bd7657",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "35d333c8-3479-446d-b331-fb291b759cfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44a10836-8eba-4e81-bfc2-46b157ee8046",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b63665ce-524c-46d7-8fc9-aa6e3a5b8760",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d03cc013-b1b2-4146-970f-48fc07a5da61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(1) .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset", "xpath:position"],
+        ["xpath=//fieldset[contains(.,'Activité physique antérieure')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8ad9f2b-31ff-424a-aa33-0648df3c61dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "$@£"
+    }, {
+      "id": "78cb14ba-cea0-446d-a477-d18451573a6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a6ca3ba1-a2bd-4ddc-ade3-6fb4096fd254",
+    "name": "7-Champs libre dans Activité Physique antérieur",
+    "commands": [{
+      "id": "d2ebec2f-b0e7-4f23-add1-832eb55f16f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ebe259a-2592-4572-859c-ccfdb45136ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11f0bde4-6c53-4fa7-870c-413916a22a9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "85755fec-f555-4b64-92d3-958b8612da7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "54987e85-37f8-41e0-b393-68aaeb9b8b9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf7ecade-0e62-418c-a38d-bf5e48bb7696",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c2cb215-ff84-4a5b-b7ed-9cd486e665be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41922026-d4fa-47ed-afab-e857992d52e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-md-12",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-md-12", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "384e90d4-b7a6-492e-9306-d40c314a81d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1838d6e-3a25-410b-ae41-b75cd59d0485",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "366a613a-a470-4ab8-8b92-b85821e516d0",
+    "name": "8-Rentrer \"  \" dans Activité physique actuelle autonome",
+    "commands": [{
+      "id": "0d159c42-dff4-44b1-ab27-3587316ae59d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e137bf7c-1c38-49bf-a4cd-976f1f034a07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56374853-fa84-4100-b2c7-0f14ef030190",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "429cec6d-fbb5-447a-8abe-7f40a3bfc224",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "a4a35525-df6a-4f99-9325-35699682da9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc101c5f-a157-40c2-8eac-8207aa6dd918",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2cfa467-8465-4879-b318-49a57a6be456",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0e5b53-2623-4d09-af3f-905157a0691b",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8636e36-2507-4195-a6bc-6d0ffcb2c679",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "5307dd25-617a-491f-9b33-63ab0497e8d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ec809beb-3940-4067-b2cd-a09c388dceb1",
+    "name": "9-Rentrer \" Minuscule\" dans Activité Physique actuelle autonome",
+    "commands": [{
+      "id": "55f86b03-e19d-4fec-a8c3-a5aaf80739ec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed19e026-4b8d-40dd-ab35-0d93d3da0bf1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c550834-4a98-42d5-96e3-7da16f69912f",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "109ae788-133c-4b5f-9c50-6c838d841e20",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "283897a2-faca-48bc-9a92-37a1d6bc0511",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "723f044d-040b-42d0-a5b0-41997ba2133a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdfbe767-35af-4120-ad60-6950bf53b203",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e1079e9-5769-4fda-957d-56bfd65a33b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "627b1afe-41c3-4ec2-a9c7-ea163951d316",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "minus"
+    }, {
+      "id": "2f3da0c3-1821-4ff1-8e4d-0f521bc87a6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "70e1ebf1-5014-4208-b456-5f9c66e4d68f",
+    "name": "10-Rentrer \" Majuscule\" dans Activité Physique actuelle autonome",
+    "commands": [{
+      "id": "32430902-9c2c-4af2-8be6-58b132a92f90",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32eb86d1-fd49-49e9-ac20-5a4d5a1aaf17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6cb822e-c5d3-4e4a-82ce-7c80daf98cb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "1c297a25-e985-41f0-afdc-b1defbd0314a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "7d25fc39-3a93-4407-a88c-c9ee43c097b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9801e7c-d557-467c-baf1-6884765abc07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39500c56-5751-4561-90bb-a00cce09c14b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4159343-db06-4a4b-a5c4-bf26222ba969",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a44aa016-08cd-490a-b4c5-92179736cdf4",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "MAJ"
+    }, {
+      "id": "b186f5d5-ea99-4b67-9086-999e0f363c6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ee9c0345-81d4-4852-9b60-936ebbcb3552",
+    "name": "11-Rentrer \" Chiffres\" dans Activité Physique actuelle autonome",
+    "commands": [{
+      "id": "9a0dd058-106b-4d10-a2f5-adf27a59ba2d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef06c2ab-afa3-43df-828d-1bcb382e37a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63f66aab-91f5-4b53-b794-d8d27a615be1",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "1217bc7f-9fe7-445a-8938-ad4bc93ccfe3",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "184b91d2-5eb7-469d-b62e-bdc12b55ed00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab72ad24-1145-4375-9182-e15e3d1ecbb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "158186b8-f80d-4f84-ba3c-8d7877e74419",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b35ea36-8f21-4ac6-8fc1-cc65622b374e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-md-6:nth-child(1) > .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-md-6:nth-child(1) > .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b424919-1b5e-4838-8847-b50744e692b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "4567"
+    }, {
+      "id": "4c27d48b-876a-4e3a-8139-2b45a9a348b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "531c945d-c10f-407b-97a2-e76302ec0e13",
+    "name": "12-Rentrer \"$@£\" dans Activité Physique actuelle autonome",
+    "commands": [{
+      "id": "f9e44e8b-0215-4c4c-8961-d93dc5f39459",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9135732-37f6-4e67-b173-d0c8cbaf74f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9668a925-9021-450c-8234-280156c1a099",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "77ab14fd-b40a-43db-9909-dec1d3cea76a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "c0be1ea3-8a90-499a-a135-8bda8f3f7f46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "133f2d01-057d-45ef-8fa8-873cf80cbe20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47776165-f9a5-4e59-aadd-4765095738fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc8e9ded-19e3-47a7-a780-4924905f2d54",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c1ce285-d6f9-49b8-9d59-6527675849ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "$@£"
+    }, {
+      "id": "dc18e889-ccb1-4237-bcb7-fefb84708b5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "93ba6b07-e70d-475f-9744-727483e2b4e5",
+    "name": "13-Champs libre dans Activité Physique actuelle autonome",
+    "commands": [{
+      "id": "ba8772bc-8253-4028-a773-c06faf968a7a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d614155-8afd-40e9-a8d8-e451dac7e65f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9796df9a-f646-4c82-8cea-99bd04d239e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "4acd1c23-4a51-4f04-89c1-a16cb3156717",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "586099f1-07af-4100-a822-9f91a9e29653",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeddbcfa-3627-478f-b00c-122b7c278c20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "362e7b94-ee50-49a8-b961-ccb2d97796d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6af940-3a1d-4c06-8bb4-b65692b7e786",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-md-6:nth-child(1) > .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-md-6:nth-child(1) > .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "897e3be7-9c4a-409f-bfa6-4baf75f6ffcc",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_autonome_textarea",
+      "targets": [
+        ["id=activite_physique_autonome_textarea", "id"],
+        ["css=#activite_physique_autonome_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_autonome_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "b5e1fe24-55b5-4f08-942f-60d45b395c2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "176a6607-c15b-48b1-8d96-ed992b5fc9d0",
+    "name": "14-Rentrer \" \" dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "d0726cb6-f106-42d0-bc47-63243bc942b9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cab66c7-3778-4fe4-a5a3-4ae06d87a718",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a151101-3f8c-4665-b41a-00c34dbb3fa7",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "fd8074a7-7a65-4a3d-b41c-d1a25fb7bc0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "7dc5e4c0-68b2-4234-8dc7-e357e8504717",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f86041f8-6c05-44b2-bfff-6acf99ba0fc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "395847e1-ca40-4874-a5b7-5bde38324706",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "420b36f8-6c0f-40e8-abd0-7848c866508c",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc349eae-1020-4d4a-b835-6e6e4cec2b2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-md-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-md-6:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87cd77fb-aefc-45cd-b010-4287f56b578b",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "d534afa4-356d-449c-b977-3855d4850de7",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1c50c488-ef36-454d-969f-cd896973fc78",
+    "name": "15-Rentrer \"Minuscule\" dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "777de9c4-1b57-4b66-9149-0c64acd37d35",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fb2a1e3-5958-4fb6-897b-30a94fe50439",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b223c89-9b24-45f6-8fd8-aa99a19add80",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "43b34949-6c65-4cdf-bb10-13d0b39019cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "cdd9098e-7522-42e8-9368-3791c316d6bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb518fe-d113-4b32-9d60-4ca0d217b367",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0037dc65-ac91-4f81-821c-fd7e2982b098",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc9a77b-7bdb-41fe-8fc2-3e27d916d3e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-md-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-md-6:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3517baf-06a4-4f5f-ba0b-a814266fa773",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "jbjvghjch"
+    }, {
+      "id": "afbbd4fc-72bc-4dec-9de5-c97dab091afa",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "56bba458-a1d8-40c0-931b-1353b8915273",
+    "name": "16-Rentrer \"Majuscule\" dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "b98163f9-105d-4c31-ba72-f208600a8895",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efa2ae01-f203-4165-a08f-2229430e628a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3960260c-993a-407f-9057-8f3d1005ea9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "3c844959-baa9-424b-8b0c-d0f02a84fdd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "7f50a666-4946-4ae1-b2f8-9f99e0af7c4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d442c0da-1e24-4120-a33a-9884c7b12e57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7269252d-bd9b-4fa2-a499-8f3fc511ba1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c314e7f-41d9-44cf-a628-f5f618b9858e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-bleu > .row",
+      "targets": [
+        ["css=.section-bleu > .row", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46a22dc4-06e0-4a29-8e1b-7ead85ad998d",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "HVHVH"
+    }, {
+      "id": "40fdf196-59b6-42d0-a394-2465405b172b",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "521be7f1-7cc3-4aa6-9a14-ecad52ae5186",
+    "name": "18-Rentrer \"Chiffres\" dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "14ad03b0-a337-4470-b1b1-c27f46f6b4ac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f6fb61-2dc0-4524-bd1f-a349c0585291",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c2da90e-be3a-4872-9c96-026d6ef9371e",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "47be14c3-81eb-4d96-9098-e508692d4aec",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "676d2277-060c-4a09-bcb0-f32484f9e436",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c89b593-b51f-42d2-be59-db8403c65b96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa63f5d5-272a-46b1-9b5a-8b965d54640f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2374f157-b904-4e42-840a-a242980b3a2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-bleu > .row",
+      "targets": [
+        ["css=.section-bleu > .row", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33cd506f-91fa-4abf-a92b-258639be1f18",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "45673"
+    }, {
+      "id": "f454ce58-6e64-4752-a924-36fc099dd14b",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0da36b61-6c54-45a8-b257-26fd78ebd535",
+    "name": "19-Rentrer \"$@£\" dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "4e25cfe4-5bec-49b0-8e88-2668bd2fa3e3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8171ae2-93df-4fa0-a304-ad5250bb158e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ca031d5-7ae5-401e-9868-7c75241f3366",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "423ae603-61cd-4a0b-a14f-43035935783f",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "36c80831-8a3f-4ad5-8984-319c89d25ace",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b9bc1c6-3334-42be-8c34-1132e0e4ecf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b640bac7-2880-4d64-9350-185170f52a82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "588516ef-c00b-493f-87d8-bd924300edc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-bleu > .row",
+      "targets": [
+        ["css=.section-bleu > .row", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "556c8f9f-36fc-4641-91b5-2f697ee44475",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "$@£"
+    }, {
+      "id": "399732bf-6465-4284-a0ba-3106fc515846",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f964a5ac-ebd6-4de0-b510-1f92060307eb",
+    "name": "20-Champs libre dans Activité Physique actuelle encadrée",
+    "commands": [{
+      "id": "f36338fb-0abb-4157-aa24-1a31a1f4f5fe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f00b2f1-3ed2-4087-9490-85785eb1388a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d1ca4ec-b8e3-4476-bdeb-9c5afe7ffe5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "97a0f018-c1a3-4993-b3b3-9a7188b01b5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "1f717d3a-db82-4b0b-b2db-4a181380fb93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fcf2278-8f97-4eaf-b2d6-1f2808e698f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3a01d7b-4188-4abf-856e-8ffe7feda681",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e1c83e1-df91-4aa1-81f0-c487dae56535",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d6ec38-7917-4ef9-aa05-2eb844925edf",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a1d1d1ad-0991-4683-8de9-41e064c32095",
+    "name": "21-Rentrer \" \" dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "231f83ae-9917-4a4e-aaab-a3851301d469",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bf6cf3f-076a-4a97-8064-3264bf890c5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af4aab44-bf1f-4894-8fa1-6ed40b03c18c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "3858d343-7f83-4883-bcc6-15bfa7a9035f",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "1b7ecc23-ae6c-47f2-9fdc-d864bd81b0eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46c6ee36-49f3-4557-b9aa-f8f0f2a7b62d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57229ef3-a508-44f3-a2b3-cec1019cd469",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c890e32-cbf3-486b-842d-9950bdb4fbb7",
+      "comment": "",
+      "command": "click",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be1bef80-2b2e-444d-897d-165effdc6966",
+      "comment": "",
+      "command": "type",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "03eb8783-de77-4fdd-886a-d44068ac5101",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fbb18cfe-c102-4997-8545-2dd1efd1b107",
+    "name": "22-Rentrer \" Minuscule\" dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "1f127a2f-9040-42e1-8e04-75c8f51f2ccb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "750547fc-07bb-46e6-a420-34432732ce99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56c5bfa5-3b04-4bb9-9982-39baf41e4e42",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "8ae391d7-2c22-4dc4-9fdd-c1aab558b743",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "566e3690-6513-4279-91cb-330965eb4da1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c6cc4a4-5e15-4adc-bc04-c9dab60db041",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9093f1b-7db3-4ec3-a057-407e4235385f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27990006-99c0-4ed4-8c40-b6efa4443ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fb5892-d45d-450f-a416-ab86557f5490",
+      "comment": "",
+      "command": "type",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "hgsdgsjd"
+    }, {
+      "id": "0f980425-c94f-4391-acd0-a961001bca5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ffb9b7f0-6389-4304-8fd0-70c98421b601",
+    "name": "23-Rentrer \" Majuscule\" dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "8b03be6b-4285-434f-9b0a-d3faeba84d32",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "544b77a6-2591-4094-b193-5e899ce0055a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef320f18-7118-4330-b497-78acd1075cc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "169d4c03-de14-44b8-9de5-9e4396b900b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "1217dd7d-0d28-479d-8b61-b738380bd3bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19621643-8730-4564-9020-0bc36b1e02c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a4442bd-4209-4041-acfb-428f9cc33606",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7719b04a-6419-4c5d-8959-12b8f39e71b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(3) .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset", "xpath:position"],
+        ["xpath=//fieldset[contains(.,'Disponibilité')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59606193-ea4f-4f54-ac86-05a665ad2511",
+      "comment": "",
+      "command": "type",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "MSHGSJH"
+    }, {
+      "id": "5e0160a4-dde5-412d-8f2f-704cd35ef1bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2955b34e-7746-479e-9a61-47c10803cb61",
+    "name": "24-Rentrer \" Chiffres\" dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "43b30e74-5606-4545-8370-cca091f0d3a9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08b60ca1-40d5-4732-9a80-03c7c0ebbfe3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14593721-539c-4b14-98a3-93462194d1e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "7ccd88e9-e7b1-435a-b0af-b044d4395f35",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "32c1f504-9614-481c-b567-f95cc9131216",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1520be58-c26f-419c-94b8-4967dc3946c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "828bcdc5-b16b-4c96-b1ea-583f3205d53b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d42217ea-872a-46df-9dfe-035e1b5a4d58",
+      "comment": "",
+      "command": "click",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ce6f23-3475-48ee-bd8c-2bb15a484483",
+      "comment": "",
+      "command": "type",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "7655656"
+    }, {
+      "id": "a373a1e7-067b-45c5-b501-542787c3303d",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9dd3fe53-2c6e-452d-8f22-b16778313ba3",
+    "name": "25-Rentrer \"$@£\" dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "db1b6a8a-7b04-4d83-a5c8-5c7c295e2b80",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b544f0b-3e83-4f01-877f-9b977995bb16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0164ab31-1730-4190-8252-0c0a76c46a89",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "2afbc133-2e37-4337-abd3-d7b7cf6ff10b",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "fc65f9a7-1316-4d8d-b217-e3c78a079df3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c43bab5-ca0b-49e1-9ca7-cb20fa8f0308",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c7ecf1-6a01-4045-abc8-4bdbbf9eb492",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c141d9d-3933-4a48-8306-c0386cbbaf31",
+      "comment": "",
+      "command": "click",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "544e7291-2125-4aa3-bec9-f8614e1b29f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "$£@"
+    }, {
+      "id": "bea9316f-e1a9-40c5-9656-430fa2b96f22",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9b40fffb-b211-4582-b413-bf3a0e9c294f",
+    "name": "26-Champs libre dans Activité Physique_Disponibilité",
+    "commands": [{
+      "id": "760f3581-fd36-465c-accd-8f07f0be155e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e7e9331-863c-4f1b-9543-aa7eca05eaf4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "377037ae-bdc0-41f3-afd3-3ed8e3cb7e00",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "79375c60-815f-4de0-b5de-7c3d067a9a7a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "2398c939-76dc-4f3f-8095-ba61115865a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "253a7e0d-6862-4b5d-9f48-976075b68841",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adab1b20-e6e4-4408-95f5-ad62f3586a27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0949d5f-d963-4202-9580-e58869e4dca2",
+      "comment": "",
+      "command": "click",
+      "target": "id=disponibilite_textarea",
+      "targets": [
+        ["id=disponibilite_textarea", "id"],
+        ["css=#disponibilite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='disponibilite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[3]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51228ea8-9bbc-46fe-855b-c8a73be99562",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b113911e-c0c8-4107-8a4d-5cb01481b56a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f4e4c67d-3d69-488d-b0f5-ff1d83bf6e63",
+    "name": "39-Rentrer \" \" dans Activité Physique envisagée",
+    "commands": [{
+      "id": "1bcca807-6d83-436e-8328-62fe98900d1a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aab1a1ec-e547-48c0-b382-95969659c968",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27edb62e-d891-48a1-bc0d-425046d6ea90",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "85c3b956-dfdd-44ab-8789-497b37286bdf",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "b38e37c4-906c-4ea7-a436-6e378351e642",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a3f63cd-36e3-4778-bc40-8fc535d79672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "614b3b98-becf-44f5-8b75-323de87b30ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd193144-c7b3-4a68-94c3-004b1e4801ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5756eb80-73a4-4486-beb4-483b4a6ed21d",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "9af0b845-322e-4101-8733-bc4de7d536cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b7528f59-e4e8-441f-bf99-aaf1a66e7e77",
+    "name": "44-Rentrer \" Minuscule\" dans Activité Physique envisagée",
+    "commands": [{
+      "id": "7aa6307f-6b32-4264-90d4-b24abad09880",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfd4cacc-bff4-45c1-836e-ae4a96c4535a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c10cf98-083d-4dce-81cb-f60ee3430719",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "801bb874-e246-4d0a-b9b7-b21743c58cd1",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "d5158f4f-c30d-4396-a61d-026d1b10f6ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22104726-e06d-48b4-948d-00a99f407c16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83a041f8-4351-4ad9-97fb-56a233a475ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9ef3faf-93a5-4ebf-8540-6e5d439d133e",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52c6a7e6-69a4-4cdc-b221-426aeb6cac08",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "ghkhkhg"
+    }, {
+      "id": "647d10aa-bb47-443d-8483-1a1e28378a5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2a5067bd-a20e-4da5-8e8b-d3082572bb2d",
+    "name": "40-Rentrer \" Majuscule\" dans Activité Physique envisagée",
+    "commands": [{
+      "id": "2ef70bd5-5404-4f9d-887e-af5d3c6b8edd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74da65f1-3064-4b72-855e-4a9d256b0385",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "010e9ba1-bc6b-4e1b-80a3-b664a1651586",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "feea0dc0-fdaa-464b-bf3d-148c687d3ba4",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "9867d655-b00d-4bf9-a7eb-fb8de93046bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0df69c11-fe63-498f-ade7-ff5c61f50765",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29bffbc5-3278-42d6-abe1-14609f78a77a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0951ff3-a6d0-41c8-8942-a1ef0d536d5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-activite-physique",
+      "targets": [
+        ["id=form-activite-physique", "id"],
+        ["css=#form-activite-physique", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c19f2f6f-15e0-41d7-b028-2d0eba20bc19",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "HGVQSG"
+    }, {
+      "id": "a9d3486e-7b62-4285-b850-c4aad9331a8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d445dbdc-5ecb-4c46-a7db-921b163395c3",
+    "name": "41-Rentrer \" Chiffres\" dans Activité Physique envisagée",
+    "commands": [{
+      "id": "23cb68bc-4ed8-4893-b4fa-0d3cda7dce64",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dca70667-50ad-4497-8bfc-e6e3d9ba8989",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a77a33ce-1ff2-485d-88c0-5d04b55b0a15",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "224f0879-6db4-402b-aa77-695005880322",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "5f0783f5-d059-49b4-874d-958ff6681567",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d6be39-c5bc-4a94-8ccd-205375ce01a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5164f9b-c5f7-4658-9aa8-501fd215cfa1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ecbcb72-bdf6-42a7-b6e3-212f0a3e290b",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce29cbb5-7c19-4d64-a4f2-a6fb38aa9705",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "3546783"
+    }, {
+      "id": "dd145d5c-7480-4792-8f03-976628cb6697",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "91e34ac5-0c9f-4905-b752-2528d7f2a1e3",
+    "name": "42-Rentrer \" $@£\" dans Activité Physique envisagée",
+    "commands": [{
+      "id": "fb3ed489-3c52-41ad-ba56-6f08b970067b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e4f5009-14b1-45b7-9c72-232edb0619db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "916533fd-3257-4bcc-8d38-1ab44f01618c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "b381f9cf-2166-479e-8e5a-03c5599f2292",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "c55a37cc-325b-4c9d-81ea-caa100c07471",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "415ad4e0-3b5f-4b61-aab7-a8f83c1ae98c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c388c7-8d29-4ebf-8c64-49aebfd45d4c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa03d9e-265a-4e29-be49-c5151cba7ccb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(4) .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset", "xpath:position"],
+        ["xpath=//fieldset[contains(.,'Activité physique envisagée')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9045495-1466-4f89-8c76-079707055b04",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "$@£"
+    }, {
+      "id": "1fb01c1b-f427-4873-ad79-eccbf55cdb11",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "26c4efa9-ea0d-4c78-a5e4-4d975f45173e",
+    "name": "43-Champs libre dans Activité Physique envisagée",
+    "commands": [{
+      "id": "13a0084c-4781-457a-b96f-61b36ac921d2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd33bd57-56fa-4583-8940-881741dfcfe0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c9a16d0-2265-4fab-834b-2b9914ac4821",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "faf14373-c237-42b6-a366-8f2216009be7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "5115e0ca-cc26-4059-9472-81c864253c01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce16e585-6181-43b5-a58e-6d58f5d95238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a189630d-c466-459e-9b91-848cc9377761",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cbb9000-cab3-43d8-a963-91c23edf3e78",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_envisagee_textarea",
+      "targets": [
+        ["id=activite_envisagee_textarea", "id"],
+        ["css=#activite_envisagee_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_envisagee_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[4]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa482745-b7ed-4a77-b781-2cc2302a3ad1",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dde96c09-49f8-4c8d-8d76-0e121a61c47c",
+    "name": "27-Rentrer \" \" dans freins à l'activité physique",
+    "commands": [{
+      "id": "3707e4b2-f526-4cef-be7c-10b37af50436",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c1c1bb6-2dab-4988-bb87-e5881958399b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b478108-0639-4074-9a55-b29870a54036",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "a4ad8e9a-2fb6-436d-b79f-0c24f0091975",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "bd79479e-1e0b-4445-8d95-45c6371b1108",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f9183c1-4e20-43b8-a4c4-0759f6bd6d67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a52b765-d6b1-4096-9e39-19f2e85060a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7431b000-5210-4dcd-a66f-7c94a27f78a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d2d9943-c152-4a7f-9b3a-41d6689392f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "4910507d-35bb-4930-a2aa-777c77a10354",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83eecc13-8c59-4b99-bb43-4a1a7c4d80db",
+    "name": "28-Rentrer \"Minuscule \" dans freins à l'activité physique",
+    "commands": [{
+      "id": "653fc6f0-6a16-4c80-9c1a-7d29b941f704",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab0a69fd-d362-4511-8bd0-16748ada9ee1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc88a262-422d-4867-8060-265895a476f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "c0760f1a-df0f-4603-9eba-700a362b9bdd",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "7a13dba5-2165-4b42-bfb0-bf5209f1e244",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0412ea1b-6329-4290-9a85-3f192bf00f46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c15bca-5bb1-4ae1-b832-227ec4957bba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc3a697-7b97-418d-b2c9-f46a3c89e74a",
+      "comment": "",
+      "command": "click",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06d7b0df-8966-47d1-bc6e-20e0943c5367",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "dgdfdt"
+    }, {
+      "id": "aa11f1ca-996c-4549-b843-a6be1e2d43bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4e67cc87-dd8f-48a3-84f2-4c248557d88e",
+    "name": "29-Rentrer \"Majuscule \" dans freins à l'activité physique ",
+    "commands": [{
+      "id": "f1fff8ae-591c-4c45-b852-0a92d5a2c6f8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bc6d66f-a76d-4b68-9755-482480508180",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb689b52-2d25-4b7e-bc46-af74552dd54c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "c7ca8602-651d-4e81-8cec-b7d005e9ac73",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "898c7368-4f88-40dd-b3d8-dc82bfcbd89f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c41b9d60-7820-4554-88ed-586442081429",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a21fd53-d404-4c9a-b9de-ff8c76eb66bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "feb1be2a-e431-4dcc-a007-062a51560106",
+      "comment": "",
+      "command": "click",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b691b600-8e21-497a-b7c1-8f234d425c95",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "DSFG"
+    }, {
+      "id": "d39256e4-422c-48cd-9dff-1c0efbb22f9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "70054fd5-4e15-4209-bc72-a587cc8e0152",
+    "name": "30-Rentrer \"Chiffres \" dans freins à l'activité physique",
+    "commands": [{
+      "id": "d202fae9-f43b-4825-a5a7-ea6655bb121e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b7f8a4b-cd1f-44f6-bba9-a9fbb30ce8e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e88a1851-e619-4ac1-9ecb-e592493268d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "ecf0fd88-3bf4-4e8d-a973-6ce6bc9f57d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "4341dbd0-4c7c-479f-82a5-24e54cefd37f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a783d2d5-c466-4786-bca8-1a2f23694869",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "979e6b31-2908-4eb0-bdb6-db0600651d71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c31c508f-2e7c-4565-b9d0-ff236807b69c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(5) > .col-md-6:nth-child(1) > .section-bleu",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-md-6:nth-child(1) > .section-bleu", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c7e12f-714c-4f11-8c2f-8094bbf667d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "8765"
+    }, {
+      "id": "b651443f-3b5e-4c2b-91f3-3e254e2d47cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "090e73c4-e712-4095-84f1-342d4e053fd1",
+    "name": "31-Rentrer \"£@$ \" dans freins à l'activité physique",
+    "commands": [{
+      "id": "6808af2a-ffe0-44c6-836f-cd5de25eceb0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2089b45-769a-4d4c-a307-a8da7d87c24f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64efeb06-689f-4dde-ba23-96b1591a7904",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "4e697c02-b5ba-461b-a258-373a4b51f622",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "f3794877-85e2-40a2-bb40-5ce78881f26e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5098d15e-de4c-4ab1-b9c7-71543d358ccb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2b307d0-eda4-4b73-adb9-30800508ce17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fda65b3-0d4e-42b4-867e-d4e70ec8cf81",
+      "comment": "",
+      "command": "click",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "893b69bb-4dd5-40a6-a35a-b98c78e51716",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "$@$"
+    }, {
+      "id": "661ca091-8eb4-4e5e-aaaa-4d27f012c0b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d74a2a69-4537-45ee-8469-c92c39c913f7",
+    "name": "32-Champs libre dans freins à l'activité physique",
+    "commands": [{
+      "id": "b3c571d1-a1c9-4485-989d-4d053eb3ee48",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55cfc3e3-458c-495e-ad7c-449b2161eeae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7491bbc5-f9d5-4b4b-b734-824fecec25e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "734a202e-92de-44c4-9cc3-efaf0481fbaa",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "95e8a678-017b-428d-b31a-c4385329da47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dda7396-36f7-4c2f-a05c-e40f266906cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ee323b-67e4-4d42-bff7-68dc6fd0fdb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28560620-f4d9-4958-8235-1bb9b5d15c26",
+      "comment": "",
+      "command": "click",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a8bb4be-4276-4931-a89d-947ca395b98f",
+      "comment": "",
+      "command": "type",
+      "target": "id=frein_activite_textarea",
+      "targets": [
+        ["id=frein_activite_textarea", "id"],
+        ["css=#frein_activite_textarea", "css:finder"],
+        ["xpath=//textarea[@id='frein_activite_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e591d484-fd88-4a0f-b468-df508d04c7ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b551afd3-d904-4605-8aeb-f3cb250641d4",
+    "name": "33-Rentrer \" \" dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "5701138d-4386-4b49-889e-b802e2227dea",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c56308f7-76b5-45cd-92f7-2893e3cc048b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35fe1849-d691-4558-8d03-047a9936eb39",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "f8c54894-fe9b-4a4e-9aed-e6e07bf710a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "69b58d4d-42d3-48a7-9149-28b02205817e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5b57804-e29a-4f6d-b4a3-ef04fb9f452a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d148f94-6615-469b-9f02-d1e0164dff39",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "511bdcc7-688f-48a2-a502-e80f067fceff",
+      "comment": "",
+      "command": "click",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3401fb69-9457-4ee7-a2e1-834832580193",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": " "
+    }, {
+      "id": "3977c0c3-1302-49bc-9ada-3dbabf4f0e6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7667d440-79c0-4083-8a15-5ed797e0fb42",
+    "name": "34-Rentrer \"Minuscule \" dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "a4dc7f46-745e-4cdc-806a-2d21fda6f26b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb5e2f9c-ea76-480f-bb47-7bcdc1f57ba5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb28f872-7d21-4d50-9dae-4ca86f645262",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "8a911452-82a6-4cf8-bf81-bd79d0b09618",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "44b8c78c-3420-442f-a6cd-85027f300b01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d1598cb-ebb6-42ef-ab3a-e05e467e253d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77daddfd-3891-40be-bf55-12da39baeefd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "612ec2c1-1db0-4b41-8a38-747e53cdc35c",
+      "comment": "",
+      "command": "click",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cc670c1-5cf4-402e-93e1-06397d28f9c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "xvdfgfdg"
+    }, {
+      "id": "53f78790-e546-4446-a4c5-23ce8c55a2cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "33ff13e2-ce81-44b4-b48c-d9c305d6a656",
+    "name": "35-Rentrer \" Majuscule\" dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "b6085d3c-34f0-4bde-a7ea-fe710de06fef",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd2cbfb-062c-449d-9a8b-700e50b0aa9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "080cf4de-9071-4ab4-8e40-e32ad1cf2c61",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "4a6f1c5f-7aad-4b74-8239-3ee3dd30da96",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "70882e5f-08f7-479f-bd77-a78ab5822d45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc30eced-aaed-4114-aabe-6a5a97974652",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd2401e0-a0d7-4dbf-b33e-22548337978a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bde1a1d-88f7-4b52-a78d-df1e6df72057",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(5) > .col-md-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-md-6:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85570cac-0cc3-4884-8c3b-f97bb5c58201",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "JHJF"
+    }, {
+      "id": "7f40e423-2113-4111-b588-d2ed4e465b57",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cf51a13d-6401-443b-a5be-96d8ee11fa8f",
+    "name": "36-Rentrer \" Chiffres\" dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "21d9c9b2-0487-4125-aecc-a540df77ccb8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1456ae1-4570-49d7-bb82-963b7daf5fdc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97307e80-a8bf-48d7-931b-be7d636c7baf",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "61616bd8-cacc-40ee-be51-792b63e5685e",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "5a318a69-64c0-4388-9da4-adeb62125664",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7de31ac-1611-4581-b3c7-81eb05fc8e08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e15191b5-743c-42c7-8fb4-99e3b904260b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc322a92-6b47-496b-993c-6d1308bd6910",
+      "comment": "",
+      "command": "click",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b35202fe-6de9-4f74-8d86-8b73b5a17024",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "2345"
+    }, {
+      "id": "5029ca13-a702-470e-ae97-e09065c5563f",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "89eecc5a-83e9-45fe-a9d0-9c8fd6f806ae",
+    "name": "37-Rentrer \" £@$\" dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "a772fd6e-43a5-492e-8fe8-7af42d428dbb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d612137d-0675-4ea5-978a-81947579e414",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd61ef0d-5dc1-4d85-8a06-46b0c4f7e17b",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "74dad579-2769-4f4c-931a-759a29e7a5e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "b9dca43e-a2fc-4496-b640-82e5d20c5a98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6558a42a-83ec-4553-b607-29491e3b4dae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e972529-ca19-495e-bc3f-92446deb66f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce1352e8-35f3-4d7c-b9ba-0dc92add5579",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(5) > .col-md-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-md-6:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f84d63d-ad00-42f9-afa1-83e210396c2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": "*$@£"
+    }, {
+      "id": "3231ee7d-fffd-455c-b182-a657704e8e8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6565a9cb-141e-4a4c-ae1b-9e2a922ee4ed",
+    "name": "38-Champs libre dans Points forts/ressources/leviers",
+    "commands": [{
+      "id": "25c5bf0a-b364-4e02-ae98-771db4dc84af",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd58c443-76e2-47ee-9595-8d6695691c05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2133c93-6583-4ae5-9f22-2edae5ee54c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "5b635f2e-4928-4498-9be3-35c12200012c",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "273ad406-3003-477d-b8dd-7ac3d5b4bec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2fa495-8caf-4691-adb1-be1f7b25d56f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(3)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'TITI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f362cb-f1e3-459f-9bfc-4fc153fad877",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a04f469b-a240-40a9-8595-ae8d161837f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(5) > .col-md-6:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-md-6:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a414ace-ebc7-4338-a818-de8b1246e28b",
+      "comment": "",
+      "command": "type",
+      "target": "id=point_fort_levier_textarea",
+      "targets": [
+        ["id=point_fort_levier_textarea", "id"],
+        ["css=#point_fort_levier_textarea", "css:finder"],
+        ["xpath=//textarea[@id='point_fort_levier_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[5]/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6445958-0388-4084-bef8-de1c51938c75",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b54ff58d-0041-4828-920c-aa06c1113f7b",
+    "name": "45-Vider_tous_champs",
+    "commands": [{
+      "id": "f0b98af6-c467-4f5e-b87e-d1ff593c290a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67f2b297-858f-4530-9ec8-f3efcda0f957",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be010292-dc56-4800-bdc6-e2a793e3e678",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "dd1a6357-c228-4e0c-8c49-912e96ba6351",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "22b7e576-918a-42fc-9aae-78028b610144",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81bb2f5f-44ed-4a93-939f-ed171e9e2604",
+      "comment": "",
+      "command": "click",
+      "target": "css=.odd > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.odd > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/table/tbody/tr/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'MALM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3eef5538-2112-4c45-b229-5d55cfb8eedf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Activité Physique",
+      "targets": [
+        ["linkText=Activité Physique", "linkText"],
+        ["css=.enabled:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Activité Physique')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Ap.php?idPatient=25')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Activité Physique')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d44dc39f-7d5e-475f-a12c-34f5183d01c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bae2273-80eb-4531-94b9-31eea6473748",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_anterieure_textarea",
+      "targets": [
+        ["id=activite_anterieure_textarea", "id"],
+        ["css=#activite_anterieure_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_anterieure_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div/div/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd570cc-5cba-4bfc-af50-39b2a602bf2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-bleu > .row",
+      "targets": [
+        ["css=.section-bleu > .row", "css:finder"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76aac686-7b39-4fe0-89fa-3c464b5304b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=activite_physique_encadree_textarea",
+      "targets": [
+        ["id=activite_physique_encadree_textarea", "id"],
+        ["css=#activite_physique_encadree_textarea", "css:finder"],
+        ["xpath=//textarea[@id='activite_physique_encadree_textarea']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[2]/div/fieldset/div/div[2]/fieldset/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b3f07f4-bd50-406c-a266-a7d422e9fd31",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifier-pathologie",
+      "targets": [
+        ["id=modifier-pathologie", "id"],
+        ["css=#modifier-pathologie", "css:finder"],
+        ["xpath=//input[@id='modifier-pathologie']", "xpath:attributes"],
+        ["xpath=//form[@id='form-activite-physique']/div/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "26ddc136-985e-4ca5-8eae-95375d93238c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["46317ccf-0ee5-41db-a91d-c6c39b7df233", "8c06388d-7eb1-424d-91a4-b6aa2cd6e9ed", "a60c54b2-4edd-4cf4-8c10-e83720514f96", "96f7f1f6-cf91-4e58-af39-cd21281d3105", "3e785908-772e-4b27-943b-d30ae00dcb7c", "a6ca3ba1-a2bd-4ddc-ade3-6fb4096fd254", "366a613a-a470-4ab8-8b92-b85821e516d0", "ec809beb-3940-4067-b2cd-a09c388dceb1", "70e1ebf1-5014-4208-b456-5f9c66e4d68f", "ee9c0345-81d4-4852-9b60-936ebbcb3552", "531c945d-c10f-407b-97a2-e76302ec0e13", "93ba6b07-e70d-475f-9744-727483e2b4e5", "176a6607-c15b-48b1-8d96-ed992b5fc9d0", "1c50c488-ef36-454d-969f-cd896973fc78", "56bba458-a1d8-40c0-931b-1353b8915273", "0da36b61-6c54-45a8-b257-26fd78ebd535", "521be7f1-7cc3-4aa6-9a14-ecad52ae5186", "f964a5ac-ebd6-4de0-b510-1f92060307eb", "a1d1d1ad-0991-4683-8de9-41e064c32095", "fbb18cfe-c102-4997-8545-2dd1efd1b107", "ffb9b7f0-6389-4304-8fd0-70c98421b601", "2955b34e-7746-479e-9a61-47c10803cb61", "9dd3fe53-2c6e-452d-8f22-b16778313ba3", "9b40fffb-b211-4582-b413-bf3a0e9c294f", "dde96c09-49f8-4c8d-8d76-0e121a61c47c", "83eecc13-8c59-4b99-bb43-4a1a7c4d80db", "4e67cc87-dd8f-48a3-84f2-4c248557d88e", "70054fd5-4e15-4209-bc72-a587cc8e0152", "090e73c4-e712-4095-84f1-342d4e053fd1", "d74a2a69-4537-45ee-8469-c92c39c913f7", "b551afd3-d904-4605-8aeb-f3cb250641d4", "7667d440-79c0-4083-8a15-5ed797e0fb42", "33ff13e2-ce81-44b4-b48c-d9c305d6a656", "cf51a13d-6401-443b-a5be-96d8ee11fa8f", "89eecc5a-83e9-45fe-a9d0-9c8fd6f806ae", "6565a9cb-141e-4a4c-ae1b-9e2a922ee4ed", "f4e4c67d-3d69-488d-b0f5-ff1d83bf6e63", "2a5067bd-a20e-4da5-8e8b-d3082572bb2d", "d445dbdc-5ecb-4c46-a7db-921b163395c3", "91e34ac5-0c9f-4905-b752-2528d7f2a1e3", "26c4efa9-ea0d-4c78-a5e4-4d975f45173e", "b7528f59-e4e8-441f-bf99-aaf1a66e7e77", "b54ff58d-0041-4828-920c-aa06c1113f7b"]
+  }],
+  "urls": ["https://suivibeneficiairesauto.sportsante86.fr/"],
+  "plugins": []
+}

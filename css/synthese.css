@@ -1,0 +1,34 @@
+.sous-titre {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #004dc6;
+}
+
+.intitule {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.text-italique {
+    font-style: italic;
+}
+
+.bottom-padding {
+    padding-bottom: 15px;
+}
+
+.bottom-padding-list {
+    padding-bottom: 10px;
+}
+
+.border-displayed {
+    border: 1px solid;
+}
+
+.border-hidden {
+    border: 1px hidden;
+}

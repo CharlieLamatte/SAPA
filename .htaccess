@@ -1,0 +1,9 @@
+Options -indexes
+
+#
+# The following lines prevent .env files from being
+# viewed by Web clients.
+#
+<Files ".env">
+    Require all denied
+</Files>

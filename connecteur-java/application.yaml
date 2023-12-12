@@ -1,0 +1,51 @@
+sapa:
+  insi:
+    # url de production: https://services-ps-tlsm.ameli.fr/lps
+    # url de test: https://qualiflps-services-ps-tlsm.ameli.fr/lps
+    url: https://qualiflps-services-ps-tlsm.ameli.fr/lps
+    lps:
+      nom: "LA SANTE PAR L ACTIVITE PHYSIQUE ADAPTEE"
+      numeroAutorisation: LSN17NF23FW0
+      # l'emetter est présent dans le certificat qui a CN = INSI-AUTO ou INSI-MANU, c(est le champ OU
+      emetteur: 300000001820687
+      version: 1.25.4
+      # Cet élément contient l’identifiant d’installation du logiciel. Cet identifiant est généré lors de l’installation du SI-PS.
+      # Cet identifiant prend la forme d’un UUID sous sa forme canonique. Il doit être pérenne pour une installation d’un logiciel. Ce numéro est une aide au support, car il permet de regrouper les requêtes d’un même logiciel. Il permet également de compter le nombre de logiciels distincts accédant au TLSi.
+      instance: 2d037640-1b09-11ee-be56-0242ac120002
+
+    p12-auto:
+      # chemin à partir du dossier certificates
+      path: asip-p12-EL-TEST-ORG-AUTH_CLI-20230704-112403-AUTO.p12
+      password: UIvbusfd8776g@dfdfgdf
+
+    p12-manu:
+      # chemin à partir du dossier certificates
+      path: asip-p12-EL-TEST-ORG-AUTH_CLI-20230704-112600-MANU.p12
+      password: sdfgsdfUQFQF9876@KJb
+
+server:
+  address: 127.0.0.1
+  port: 8080
+
+logging:
+  file:
+    path: "./logs"
+  level:
+    root: INFO
+    org:
+      sapa:
+        lps:
+          INSSoapHandler: DEBUG
+          InsSoapClient: DEBUG
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: "/api-docs"
+
+spring:
+  jackson:
+    date-format: "org.openapitools.RFC3339DateFormat"
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false

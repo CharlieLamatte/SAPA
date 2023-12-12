@@ -1,0 +1,201 @@
+package Activité_Physique;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.Properties;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class InfoBullesTest {
+    private WebDriver driver;
+    JavascriptExecutor js;
+
+    @BeforeEach
+    public void setUp() throws IOException {
+        Properties prop = new Properties();
+        prop.load(new FileInputStream("DriverProperties.txt"));
+        String chromedriverpath = prop.getProperty("Path");
+        System.setProperty("webdriver.chrome.driver", chromedriverpath);
+        driver = new ChromeDriver();
+        js = (JavascriptExecutor) driver;
+    }
+
+    @AfterEach
+    public void tearDown() {
+        driver.quit();
+    }
+    @Test
+    public void testActPhysiqActuel() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(2) > .col-md-12 > .section-bleu > .section-titre-bleu > .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+    }
+
+    @Test
+    public void testAutonome() {
+            driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+            driver.findElement(By.id("identifiant")).click();
+            driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+            driver.findElement(By.id("pswd")).click();
+            driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+            driver.findElement(By.cssSelector(".btn")).click();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+            driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+            driver.findElement(By.linkText("Activité Physique")).click();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.findElement(By.cssSelector(".row:nth-child(2) > .col-md-6:nth-child(1) .infobulle")).click();
+            assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+        }
+
+    @Test
+    public void testEncadree() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(2) > .col-md-6:nth-child(2) .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+    }
+
+    @Test
+    public void testDisponibilite() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(3) .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+    }
+
+    @Test
+    public void testActPhyqEnvisage() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(4) .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+    }
+
+    @Test
+    public void testFreinAactivPhysiq() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(5) > .col-md-6:nth-child(1) .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+    }
+
+    @Test
+    public void testPointFort() {
+        driver.get("https://suivibeneficiairesauto.sportsante86.fr/");
+        driver.findElement(By.id("identifiant")).click();
+        driver.findElement(By.id("identifiant")).sendKeys("coordo86@gmail.com");
+        driver.findElement(By.id("pswd")).click();
+        driver.findElement(By.id("pswd")).sendKeys("Azerty123@");
+        driver.findElement(By.cssSelector(".btn")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.findElement(By.cssSelector(".text-left:nth-child(3)")).click();
+        driver.findElement(By.linkText("Activité Physique")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.findElement(By.cssSelector(".row:nth-child(5) > .col-md-6:nth-child(2) .infobulle")).click();
+        assertEquals("https://suivibeneficiairesauto.sportsante86.fr/PHP/Patients/Ap.php?idPatient=10", driver.getCurrentUrl());
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

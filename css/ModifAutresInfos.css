@@ -1,0 +1,28 @@
+.group-section {
+    border: 2px solid #ff751a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.group-section-titre {
+    background-color: #ff751a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: -2px;
+    width: 50%;
+}
+
+.group-section .row {
+    padding: 2px 7px 2px 7px;
+}
+
+.espaceSousRow {
+    padding-bottom: 1em;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

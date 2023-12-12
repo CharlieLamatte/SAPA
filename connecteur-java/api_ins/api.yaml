@@ -1,0 +1,131 @@
+openapi: 3.0.0
+info:
+  title: ConnecteurINSSAPA
+  description: Cette API REST est un connecteur entre le client SOAP INS et le logiciel SAPA
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/v1
+
+paths:
+  /ins/find_ins:
+    post:
+      summary: "WS_INS2: Recherche de l'INS d'un individu à partir des traits d'identités sans carte Vitale"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TraitsDIdentite'    # <-------
+      responses:
+        '200':
+          description: A Resultat object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Resultat'    # <-------
+        '500':
+          description: Unexpected error
+  /cnda/inject:
+    post:
+      summary: ""
+      parameters:
+        - in: query
+          name: fileName
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: A Resultat object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Resultat'    # <-------
+components:
+  schemas:
+    TraitsDIdentite:
+      type: object
+      properties:
+        nomNaissance:
+          type: string
+          example: ADRDEUX
+        prenom:
+          type: string
+          description: Permier prénom
+          example: LAURENT
+        listePrenom:
+          type: array
+          items:
+            type: string
+        sexe:
+          type: string
+          description: M ou F
+          example: M
+        dateNaissance:
+          type: string
+          description: La date de naissance au format AAAA-MM-JJ
+          example: 1981-01-01
+        lieuNaissance:
+          type: string
+          example: 63220
+    IdentifiantNationalSante:
+      type: object
+      properties:
+        matricule:
+          type: object
+          properties:
+            numIdentifiant:
+              type: string
+              example: 1810163220751
+            cle:
+              type: string
+              example: 40
+            typeMatricule:
+              type: string
+          required:
+            - numIdentifiant
+        oid:
+          type: string
+          example: 1.2.250.1.213.1.4.8
+        dateDeb:
+          type: string
+          format: date
+          description: date au format XMLGregorianCalendar, TODO vérifier conversion
+        dateFin:
+          type: string
+          format: date
+          description: date au format XMLGregorianCalendar, TODO vérifier conversion
+      required:
+        - matricule
+        - oid
+    Resultat:
+      type: object
+      properties:
+        compteRendu:
+          type: object
+          properties:
+            codeCR:
+              type: string
+              example: "00"
+            libelleCR:
+              type: string
+              example: "OK"
+          required:
+            - codeCR
+            - libelleCR
+        individu:
+          type: object
+          properties:
+            insActif:
+              $ref: '#/components/schemas/IdentifiantNationalSante'    # <-------
+            insHistorique:
+              type: array
+              items:
+                $ref: '#/components/schemas/IdentifiantNationalSante'    # <-------
+            traitsIdentite:
+              $ref: '#/components/schemas/TraitsDIdentite'    # <-------
+          required:
+            - insActif
+            - traitsIdentite
+      required:
+        - compteRendu

@@ -1,0 +1,829 @@
+{
+  "id": "18d7504f-2dfb-4421-8aee-223095738f90",
+  "version": "2.0",
+  "name": "Santé",
+  "url": "https://suivibeneficiairesauto.sportsante86.fr",
+  "tests": [{
+    "id": "9e5602c0-74bc-469a-8df5-b5b1475a0635",
+    "name": "2_Saisie_Observation_01",
+    "commands": [{
+      "id": "731d12c2-fb3f-4bbf-827f-e632b82db71b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c54a158-630b-4ebf-b761-6edb47fedc15",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb6cf259-27f4-48b8-969f-0c9f81083642",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "a555faf6-d194-4627-938e-0e11bb96b8f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "13fbb51b-d3ed-4208-9f66-4364bbe0ef34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aca30548-57f9-4733-b5d2-a3b5d1179d8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc9ffdac-209a-416c-8c56-51f0c1c761cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c5d0ee-9ccb-4140-8f26-75d409eca61c",
+      "comment": "",
+      "command": "click",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "705b0a92-d53e-4c99-87a3-5536ac6de472",
+      "comment": "",
+      "command": "type",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "  "
+    }, {
+      "id": "3f344108-e4a3-4160-ba9f-074ec8b71c36",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eaccf2c-a3a3-447c-b31c-da014b5d1b92",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": "Observations santé help"
+    }]
+  }, {
+    "id": "67448596-5a21-4dff-8d76-27b9504ce0e7",
+    "name": "3_Saisie_Observation_02",
+    "commands": [{
+      "id": "b65f4d67-9ee4-49c9-a69f-7f5109882681",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e8433c0-d475-4621-a61a-b214b49e3e3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cff92940-19a6-4d04-8dfa-c057fc5a4854",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "27c27b8a-1234-4b73-a7cc-0d661aa5f9a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "3a22be0c-5052-400e-8465-d1066075fd1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9306b5-eb63-4ddb-b312-ba526ffac247",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9f44d8-493b-4840-808a-1ad5cd3eaaec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0036de0-ce63-4d7c-a614-53e8b6df8694",
+      "comment": "",
+      "command": "click",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23aa5f0c-b3c3-476c-8dea-0650bb7e0611",
+      "comment": "",
+      "command": "type",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "7a6dd85d-f43c-4f68-a553-5f3e5cdae534",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8319b1cd-4ee8-4dfb-a346-344d1f8f62a9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": "Observations santé help"
+    }]
+  }, {
+    "id": "1d57a66d-9907-4163-9c92-b8bf2d3bb8cb",
+    "name": "4_Saisie_Observation_03",
+    "commands": [{
+      "id": "06a3455d-0e9d-4fd0-ac33-f8c3e3155252",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10723f02-ff90-4902-aea0-79bfea9ef15c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34c2654-03c6-4b4d-be59-69567eb98aa8",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "037c8136-a6d3-4069-a9e4-b6519f28eb4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "6bd6ca61-9c04-4431-9457-bec78dd7af39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a566a377-74c2-4f2d-80ae-dfa34316f7d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cccf8d3-1bac-4e35-acce-f3b5d255dbca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "646d9be0-b710-4b98-8f37-6481a6784e66",
+      "comment": "",
+      "command": "click",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f37fb11-9f8a-4cc8-a1e6-257a379b9a84",
+      "comment": "",
+      "command": "type",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "TEST"
+    }, {
+      "id": "bc6f39da-c735-47bf-8334-b09f86ee9a1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88422b4b-87b9-494d-b96d-61d8f64cd1e6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": "Observations santé help"
+    }]
+  }, {
+    "id": "7ead75f7-2e32-482f-8e55-29b51a219060",
+    "name": "5_Saisie_Observation_04",
+    "commands": [{
+      "id": "ad788023-4cb5-466f-b9f8-d5d0eb300fed",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d166ba42-798c-489a-ad57-087a409fdea8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad113176-7ac6-4e23-ac34-b92000766c5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "8beec98b-c62c-4441-b6e5-6b6b769d57ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "8c423161-5399-458f-a3a0-ea6789f3e8d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "731efa49-e5ed-43d1-ad2b-a6651460ae17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ddab78-ee4d-465b-beec-48021cd632e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f221fb2-736a-4553-8726-d0c0a77c134a",
+      "comment": "",
+      "command": "click",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5924c8c5-eb06-44b8-9458-9d0da9884efa",
+      "comment": "",
+      "command": "type",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "f6b12786-4fd3-42c7-8d89-c0dab8b13a2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2004378-491b-47cf-9dd7-102cce2773a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": "Observations santé help"
+    }]
+  }, {
+    "id": "abb7e610-5074-48ce-9cf2-03d2f4a12b11",
+    "name": "6_Saisie_Observation_05",
+    "commands": [{
+      "id": "6352e064-a0ac-400b-894f-c76f25a3082a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68458b77-6b7e-4126-80e9-664c64a62217",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7bfbf6f-a116-4cbe-9622-32d4a0000e95",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "f319f33c-5876-472c-ade5-fed63a6f47ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "6e3b8aff-1cd5-49df-b2eb-339344b03c8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f27cb805-deee-4871-a6a2-b187c9c1e5dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cddc60dd-8c74-4913-ae38-42b9685ac459",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac63767f-f27c-4f74-b9f8-ddb1d3eb51fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df37d518-dec8-437e-8d8c-c225540b1db0",
+      "comment": "",
+      "command": "type",
+      "target": "id=observation",
+      "targets": [
+        ["id=observation", "id"],
+        ["name=observation", "name"],
+        ["css=#observation", "css:finder"],
+        ["xpath=//input[@id='observation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "?.?././@"
+    }, {
+      "id": "049cdcb8-08c4-4351-94b1-509b412b1137",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa99d9e-d47e-4b4e-81cd-5e542bb24f2d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3a23418e-fc9d-459f-ab14-472c32e0449d",
+    "name": "7_Saisie_Observation_06",
+    "commands": [{
+      "id": "67eee43f-3bd3-40bc-bf41-bc87db8f2978",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5ddc33f-6998-42db-b78e-39f8b77a1d8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65ccfb64-9c3f-4ee1-a89a-1cad033ee3d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "1117f81d-fbaa-4d3b-964d-34ec33cd4777",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "6a70e98e-dce8-4b50-8ca5-9f4b528ff26f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a71a50f0-66ff-44c7-9b28-a13d6b0ed663",
+      "comment": "",
+      "command": "click",
+      "target": "css=.even > .text-left:nth-child(2)",
+      "targets": [
+        ["css=.even > .text-left:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='table_id-body']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'TOM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb5e52ad-bc5c-4f13-ba03-434936f55fe9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Santé",
+      "targets": [
+        ["linkText=Santé", "linkText"],
+        ["css=.enabled:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Santé')]", "xpath:link"],
+        ["xpath=//nav[@id='main-navbar']/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Sante.php?idPatient=13')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Santé')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55c4462f-85b1-4727-a983-3738daf4c549",
+      "comment": "",
+      "command": "click",
+      "target": "id=ajouterobservation",
+      "targets": [
+        ["id=ajouterobservation", "id"],
+        ["name=ajouterobservation", "name"],
+        ["css=#ajouterobservation", "css:finder"],
+        ["xpath=//button[@id='ajouterobservation']", "xpath:attributes"],
+        ["xpath=//form[@id='form-observation']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55021740-2d60-4edd-b392-d1f42dfebcf5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-titre-noir",
+      "targets": [
+        ["css=.section-titre-noir", "css:finder"],
+        ["xpath=//div[@id='main']/div/fieldset/legend", "xpath:idRelative"],
+        ["xpath=//div[4]/div/fieldset/legend", "xpath:position"]
+      ],
+      "value": "Observations santé help"
+    }]
+  }],
+  "suites": [{
+    "id": "1282f0a8-3f7c-4c77-bbb8-1d47a00f133d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e5602c0-74bc-469a-8df5-b5b1475a0635", "67448596-5a21-4dff-8d76-27b9504ce0e7", "1d57a66d-9907-4163-9c92-b8bf2d3bb8cb", "7ead75f7-2e32-482f-8e55-29b51a219060", "abb7e610-5074-48ce-9cf2-03d2f4a12b11", "3a23418e-fc9d-459f-ab14-472c32e0449d"]
+  }],
+  "urls": ["https://suivibeneficiairesauto.sportsante86.fr/"],
+  "plugins": []
+}

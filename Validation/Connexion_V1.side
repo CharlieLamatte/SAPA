@@ -1,0 +1,449 @@
+{
+  "id": "6dd1bc77-8076-45cf-9a4f-aebc0926dc21",
+  "version": "2.0",
+  "name": "Connexion_V1",
+  "url": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+  "tests": [{
+    "id": "4ba269ba-776e-4ed4-b4f1-958222697260",
+    "name": "2 - Connexion correcte",
+    "commands": [{
+      "id": "b2307490-ab1c-484e-9706-d9d5c07ec124",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6dc7625-62c1-4320-ba2c-55447cd1ab7c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae56274f-26b8-4b65-9b67-289dab368e9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "c6b54d1b-a1c0-4927-94a9-a74bd897dd36",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "3a4a040f-4878-46af-b8ef-df7702bc9552",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c828a71-c4c5-4303-9f7f-9b47db39cb30",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//legend[@id='legendPatient']/center", "xpath:idRelative"],
+        ["xpath=//center", "xpath:position"],
+        ["xpath=//center[contains(.,'Bénéficiaires')]", "xpath:innerText"]
+      ],
+      "value": "Bénéficiaires"
+    }]
+  }, {
+    "id": "b934ee54-8793-4b7b-aa8f-66c0b39f3cc6",
+    "name": "3 - Connexion email incorrect",
+    "commands": [{
+      "id": "a354badb-a60d-4c53-b1c8-e1f06c518059",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8b3e4c8-ecf9-4d15-8981-358df50dc047",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45650f18-3922-46d2-aafd-1c535c95c236",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordo@test.test"
+    }, {
+      "id": "c757f19c-b537-4b74-b638-fb1328350dba",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "0ede10d0-f1cc-4452-9db7-36410e3b3123",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d2ec09f-3093-4719-ade6-18d4df1c8d89",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.text-center:nth-child(3)",
+      "targets": [
+        ["css=.text-center:nth-child(3)", "css:finder"],
+        ["xpath=//fieldset[@id='connexion']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mot de passe ou email invalide.')]", "xpath:innerText"]
+      ],
+      "value": "Mot de passe ou email invalide."
+    }]
+  }, {
+    "id": "dea79347-d64f-4fc4-b201-23d0a8df3a6d",
+    "name": "4 - Connexion mdp incorrecte",
+    "commands": [{
+      "id": "b4f237c6-a893-4c6f-9ede-f421b72d9957",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fced879c-8464-4325-8eee-362ea21d371f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b61abfe9-9720-48d8-b423-e129d913a07d",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "99c347e4-5559-4bd0-a262-4151558677d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAz6"
+    }, {
+      "id": "f22c8fa7-644a-49e9-bf20-396367098a3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ed32603-68c5-4572-b279-7d3d26e0c64b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.text-center:nth-child(3)",
+      "targets": [
+        ["css=.text-center:nth-child(3)", "css:finder"],
+        ["xpath=//fieldset[@id='connexion']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mot de passe ou email invalide.')]", "xpath:innerText"]
+      ],
+      "value": "Mot de passe ou email invalide."
+    }]
+  }, {
+    "id": "6ea54363-17cb-49fb-9be2-75c732332af8",
+    "name": "5 - Connexion email vide",
+    "commands": [{
+      "id": "d3eaaf0c-65b4-4718-b915-814af25e5f77",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "040b080f-62c8-492c-91b9-023b5b72a409",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe3344b7-ed82-41fc-800e-51c387c04017",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8686c927-9bb3-4e68-acdf-989371734a74",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1-2aAzz6"
+    }, {
+      "id": "6584bedf-e289-4eb6-94a3-ac4e785a761b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2738c06-a630-4e38-9b79-9def49e99c82",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=legendCo",
+      "targets": [
+        ["id=legendCo", "id"],
+        ["css=#legendCo", "css:finder"],
+        ["xpath=//legend[@id='legendCo']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/div/legend", "xpath:idRelative"],
+        ["xpath=//legend", "xpath:position"],
+        ["xpath=//legend[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": "Connexion"
+    }]
+  }, {
+    "id": "450a8801-1444-43ad-a4f5-f22e79940adf",
+    "name": "5 - Connexion mdp vide",
+    "commands": [{
+      "id": "3bc2fb73-55e6-4614-81a5-501885451039",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "229a58ab-9421-476f-8381-d397e36ab4bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0913c407-4959-4702-955e-0f1463821f0f",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coordostruct@test.test"
+    }, {
+      "id": "050c3c27-71c8-455d-b387-466e267dcb98",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a87535a1-0f03-49e8-8d57-a0dda35a89ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02aaf3b2-5184-48bb-bdb5-1fe198321775",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=legendCo",
+      "targets": [
+        ["id=legendCo", "id"],
+        ["css=#legendCo", "css:finder"],
+        ["xpath=//legend[@id='legendCo']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/div/legend", "xpath:idRelative"],
+        ["xpath=//legend", "xpath:position"],
+        ["xpath=//legend[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": "Connexion"
+    }]
+  }, {
+    "id": "267e367c-48de-4e37-ac1d-74666f44db56",
+    "name": "6 - Connexion email et mdp vide",
+    "commands": [{
+      "id": "585492eb-4bc3-4dc5-86fb-3e3dc8ec2858",
+      "comment": "",
+      "command": "open",
+      "target": "https://suivibeneficiairesauto.sportsante86.fr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90530b7c-9798-4da9-b050-de3784b93c57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51535f45-14da-4919-b4c1-ef3f120216f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifiant",
+      "targets": [
+        ["id=identifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#identifiant", "css:finder"],
+        ["xpath=//input[@id='identifiant']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d4837ef-3d3a-4213-96d9-82cda785358c",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb2ed15-9b5b-4507-9650-85526328ab3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab3fd32-33db-4f75-b370-6a6bc825bdec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=legendCo",
+      "targets": [
+        ["id=legendCo", "id"],
+        ["css=#legendCo", "css:finder"],
+        ["xpath=//legend[@id='legendCo']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='connexion']/div/legend", "xpath:idRelative"],
+        ["xpath=//legend", "xpath:position"],
+        ["xpath=//legend[contains(.,'Connexion')]", "xpath:innerText"]
+      ],
+      "value": "Connexion"
+    }]
+  }],
+  "suites": [{
+    "id": "0cdaec4f-1ceb-4779-b530-c62b070d2a6c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4ba269ba-776e-4ed4-b4f1-958222697260", "b934ee54-8793-4b7b-aa8f-66c0b39f3cc6", "dea79347-d64f-4fc4-b201-23d0a8df3a6d", "6ea54363-17cb-49fb-9be2-75c732332af8", "450a8801-1444-43ad-a4f5-f22e79940adf", "267e367c-48de-4e37-ac1d-74666f44db56"]
+  }],
+  "urls": ["https://suivibeneficiairesauto.sportsante86.fr/index.php"],
+  "plugins": []
+}

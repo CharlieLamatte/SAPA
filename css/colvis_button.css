@@ -1,0 +1,24 @@
+/**
+ Ajoute un logo dans les boutons de selection de visibilité (après le texte)
+ pour déterminer plus facilement si le bouton est actif ou non
+ */
+
+div[role=menu] > button.dt-button.active:after {
+    content: '';
+    background: url('../images/green_checkmark.png');
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+}
+
+div[role=menu] > button.dt-button:after {
+    content: '';
+    background: url('../images/red_crossmark.png');
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+}

@@ -1,0 +1,48 @@
+.table_parcours {
+    width: 100%
+}
+
+.table_parcours th, .table_parcours tbody, .table_parcours td {
+    text-align: center;
+    border: solid 1px
+}
+
+.table_parcours #Case1 {
+    border: none
+}
+
+.titre {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #191970
+}
+
+hr {
+    border-top: 5px solid #191970
+}
+
+.Titre_ligne {
+    font-weight: bold
+}
+
+.bouton {
+    display: block;
+    margin: auto
+}
+
+.section {
+    border: 2px solid #191970;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Titre d'un groupe dans le modal */
+.section-titre {
+    background-color: #191970;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: -7px;
+    width: auto;
+}

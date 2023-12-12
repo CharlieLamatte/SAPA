@@ -1,0 +1,186 @@
+/* Titre principal */
+.modal-title {
+    background-color: #B5DD51;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.group-modal {
+    border: 2px solid #6F0347;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Titre d'un groupe dans le modal */
+.group-modal-titre {
+    background-color: #D84DA5;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: -2px;
+    width: 50%;
+}
+
+/* Cacher le bouton en haut à droite */
+.modal-header button {
+    visibility: hidden;
+}
+
+.group-modal .row {
+    padding: 5px 5px 5px 5px;
+}
+
+/* Aligne les labels à droite */
+.group-modal .row .col-md-2 label {
+    float: right;
+}
+
+/* Aligne les labels à droite */
+.group-modal .row label {
+    float: right;
+}
+
+/* Aligne les labels par défault */
+.group-modal .row .label-float-unset {
+    float: unset;
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.retour {
+    display: block;
+    color: black;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: inherit;
+    border: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.clickable {
+    cursor:pointer;
+}
+
+/* The toast - position it at the bottom and in the middle of the screen */
+/* https://www.w3schools.com/howto/howto_js_snackbar.asp */
+#toast {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #1E1B7A; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 8px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1000; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the toast when clicking on a button (class added with JavaScript) */
+#toast.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/**
+ * Affichage du tooltip pour les bouttons delete
+ */
+.tooltip-delete {
+    display: inline-block; /* display: block works as well */
+}
+
+.tooltip-delete .btn[disabled] {
+    /* don't let button block mouse events from reaching wrapper */
+    pointer-events: none;
+}
+
+.tooltip-delete.disabled {
+    /* OPTIONAL pointer-events setting above blocks cursor setting, so set it here */
+    cursor: not-allowed;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display: none;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+/* Add an orange text color and an "⚠" when the requirements are wrong */
+.warning {
+    color: orange;
+}
+
+.warning:before {
+    position: relative;
+    left: -35px;
+    content: "⚠";
+}

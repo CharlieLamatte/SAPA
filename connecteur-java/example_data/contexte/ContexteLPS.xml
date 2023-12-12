@@ -1,0 +1,11 @@
+<ContexteLPS Version="01_00" Nature="CTXLPS" xmlns="urn:siram:lps:ctxlps">
+ <Id>95fdabea-1b16-11ee-be56-0242ac120002</Id>
+ <Temps>2023-07-04T16:46:39.0064Z</Temps>
+ <Emetteur>300000001820687</Emetteur>
+ <LPS>
+	<IDAM R="4">LSN17NF23FW0</IDAM>
+	<Version>1</Version>
+	<Instance>2d037640-1b09-11ee-be56-0242ac120002</Instance>
+	<Nom>urn:lps:LA SANTE PAR L ACTIVITE PHYSIQUE ADAPTEE:1</Nom>
+ </LPS>
+</ContexteLPS>

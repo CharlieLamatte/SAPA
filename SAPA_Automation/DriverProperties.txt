@@ -1,0 +1,2 @@
+browserName=chrome
+Path=/Users/solenefoucaud/Desktop/chromedriver

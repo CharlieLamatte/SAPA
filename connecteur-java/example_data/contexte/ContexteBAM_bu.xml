@@ -1,0 +1,11 @@
+<ctxbam:ContexteBAM xmlns:ctxbam="urn:siram:bam:ctxbam" Nature="CTXBAM" Version="1.0">
+<ctxbam:Id>9f31eb3b-e39f-4518-a13f-07fdc262f925</ctxbam:Id>
+<ctxbam:Temps>2012-01-27T14:35:47Z</ctxbam:Temps>
+<ctxbam:Emetteur>899900003163</ctxbam:Emetteur>
+<ctxbam:COUVERTURE>
+<ctxbam:GrandRegime>01</ctxbam:GrandRegime>
+<ctxbam:Organisme>349</ctxbam:Organisme>
+<ctxbam:CodeCentre>9881</ctxbam:CodeCentre>
+<ctxbam:BENEFICIAIRE/>
+</ctxbam:COUVERTURE>
+</ctxbam:ContexteBAM>

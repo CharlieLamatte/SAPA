@@ -1,0 +1,115 @@
+/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+/**
+ * bouton de notification
+ */
+.notification {
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.notification:hover {
+    background: red;
+}
+
+.notification .badge {
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    display: none;
+}
+
+/**
+ * Side nav
+ */
+
+/* The side navigation menu */
+.sidenava {
+    height: 100%; /* 100% Full-height */
+    width: 400px;
+    display: none; /* not displayed - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0; /* Right-sided navigation */
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenava */
+}
+
+/* The navigation menu links */
+.sidenava a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenava a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenava .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Position and style the vider button (top left corner) */
+.sidenava .deletebtn {
+    position: absolute;
+    top: 10px;
+    right: 330px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenava (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenava {padding-top: 15px;}
+    .sidenava a {font-size: 18px;}
+}

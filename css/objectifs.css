@@ -1,0 +1,56 @@
+/* Tableau d'affichage des prescriptions */
+
+.table-objectif {
+    width: 100%;
+    background-color: #d4e2ff;
+    margin-bottom: 1%;
+    border: solid;
+    border-width: 0.8px;
+    border-color: #8cb4ff;
+    box-shadow: 1px 1px 7px rgb(179, 179, 179);
+}
+
+.objectif-td-date {
+    padding: 1%;
+    text-align: center;
+    color: #2c5094;
+    width: 15%;
+    font-weight: bold;
+    background-color: #c4d8ff;
+    border: solid;
+    border-width: 0.8px;
+    border-color: #8cb4ff;
+}
+
+.objectif-td-fichier {
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    text-align: center;
+    width: 22%;
+}
+
+.objectif-td-avis {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.objectif-td-boutons {
+    padding: 1%;
+    text-align: center;
+    width: 13%;
+}
+
+.titre {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #191970
+}
+
+hr {
+    border-top: 5px solid #191970
+}

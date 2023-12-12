@@ -1,0 +1,86 @@
+#generalbloc {
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.fieldset_Ajout_user1 {
+    border: 2px solid #6F0347;
+    border-radius: 2%;
+    width: 90%;
+    text-align: center;
+    float: center;
+}
+
+.fieldset_Ajout_user2 {
+    border: 2px solid #6F0347;
+    border-radius: 2%;
+    width: 90%;
+    text-align: center;
+    float: center;
+}
+
+.legend_Ajout_user {
+    background-color: #B5DD51;
+    width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend_gros_titre {
+    background-color: #D84DA5;
+    color:  #fff;
+    width: 50%;
+    text-align: center;
+    margin-right: 25%;
+}
+
+
+label {
+    text-align: left;
+}
+
+input[type="text"],
+input[type="date"] {
+    display: inline-block;
+    /* float: right; */
+    width: 250px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+
+
+select {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}

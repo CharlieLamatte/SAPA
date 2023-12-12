@@ -1,0 +1,25 @@
+actor: AcceptanceTester
+modules:
+  enabled:
+    - Asserts
+    - \Tests\Support\Helper\Acceptance
+    - WebDriver:
+        url: http://localhost/
+        browser: chrome
+        window_size: 1920x1080
+        port: 9515
+        capabilities:
+          chromeOptions:
+            args: [ "--headless" ]
+    - Db:
+        dsn: 'mysql:host=localhost;dbname=sportsanzbtest2'
+        user: 'root'
+        password: 'root'
+        dump:
+          - 'tests/Support/Data/sportsanzbtest2.sql'
+          - 'stored_procedures_and_functions/FUNCTION_evaluations.sql'
+        cleanup: false # run populator before each test
+        populate: false # run populator before all test
+        populator: 'mysql -u $user -p$password -h $host $dbname < $dump'
+step_decorators:
+  - \Codeception\Step\Retry

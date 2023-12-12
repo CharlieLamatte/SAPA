@@ -1,0 +1,28 @@
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <env:Body xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <RESULTAT xmlns="http://www.cnamts.fr/INSiResultat" xmlns:ns0="http://www.cnamts.fr/INSiRecVit" xmlns:ns1="http://www.cnamts.fr/INSiRecSans">
+      <CR>
+        <CodeCR>00</CodeCR>
+        <LibelleCR>OK</LibelleCR>
+      </CR>
+      <INDIVIDU>
+        <INSACTIF>
+          <IdIndividu>
+            <NumIdentifiant>2770763220829</NumIdentifiant>
+            <Cle>10</Cle>
+          </IdIndividu>
+          <OID>1.2.250.1.213.1.4.8</OID>
+        </INSACTIF>
+        <TIQ>
+          <NomNaissance>NESSI</NomNaissance>
+          <ListePrenom>NATHALIE</ListePrenom>
+          <Sexe>F</Sexe>
+          <DateNaissance>1977-07-14</DateNaissance>
+          <LieuNaissance>63220</LieuNaissance>
+        </TIQ>
+      </INDIVIDU>
+    </RESULTAT>
+  </env:Body>
+</soap:Envelope>

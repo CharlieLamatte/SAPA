@@ -1,0 +1,26 @@
+enregistrer avec tout vide 
+
+Nom: "elie","ELIE", "Elie", "éééé", "éLie", "é", "123456","%-/*", ""," ", " Elie", "El ie", "Jean-Baptiste", "Elie "; (14 essais)
+
+Prénom: "elie","ELIE", "Elie", "éééé", "éLie", "é", "123456","%-/*", ""," ", " Elie", "El ie", "Jean-Baptiste", "Elie "; (14 essais)
+
+Email: "aa@AA", "azerty", "", " ", "x", "123456", "aa aa@gmail.com", "test@gmail.com" (8 tests)
+
+Téléphone: "06 12 34 56 78", "0612345678","06-12-34-56-78","06.12.34.56.78", "azertyuiop","éééééééééé", "AZERTYUIOP" ,"1","12345678912" ; (9 tests)
+
+Diplôme: "" , "NFS" , "BMF"
+
+Statut: "", "Bénévole", "Salarié", "Libéral"
+
+Numéro de carte: "06 12 34 56 78", "0612345678","06-12-34-56-78","06.12.34.56.78", "azertyuiop","éééééééééé", "AZERTYUIOP" ,"1","12345678912" ; (9 tests)
+
+
+
+Modèle:
+Nom: Michel
+Prenom: Jean
+Email: jean@gmail.com
+Téléphone: 0606060606
+Diplôme: DEJEPS
+Statut: Salarié
+Numéro de carte: 0123456789

@@ -1,0 +1,79 @@
+.content-table {
+    border-collapse: collapse;
+    margin: auto;
+
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #05b2b5;
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 20px 40px;
+
+
+}
+
+.content-table tbody tr {
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #05b2b5;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #05b2b5;
+}
+
+
+#nav {
+
+    display: flex;              /* Transformation en flexbox */
+    padding:10px;                  /* Suppression des marges internes */
+    justify-content: center;     /* Alignements des liens dans le menu */
+    text-align: center; /* centrer le texte */
+}
+
+#nav li {
+	display: inline;
+	list-style: none; /* nécessaire pour IE7 */
+}
+
+
+
+#nav li {
+	display: inline;
+	list-style: none;
+}
+
+#nav a {
+	display:block;                /* Transformation en block */
+    min-width: 140px;             /* Largeur minimale des liens */
+    font-weight: bold;
+
+    margin: 0.8rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 5;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */
+    background-color:rgba(154,191, 29);   /* Couleur d'arrière-plan */
+    color: #fff;                /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;     /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+
+}
