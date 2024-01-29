@@ -5,7 +5,7 @@ import 'package:flutter_application_3/old/views/pages/module_MaProgression/progr
 class CategoryGrid extends StatelessWidget {
   final Function() updateDarkThemeState;
 
-  CategoryGrid(this.updateDarkThemeState);
+  CategoryGrid(this.updateDarkThemeState, {Key? key}) : super(key: key);
 
   final _categories = [
     Category("Suivi PEPS", Colors.pink, "category2.jpg"),
@@ -106,8 +106,7 @@ class CategoryGrid extends StatelessWidget {
                     }
                 },
                 style: ElevatedButton.styleFrom(
-                  elevation: 0.0,
-                  primary: Colors.red.withOpacity(0),
+                  elevation: 0.0, backgroundColor: Colors.red.withOpacity(0),
                   shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(10),
@@ -143,11 +142,11 @@ class CategoryGrid extends StatelessWidget {
     return GridView.count(
       primary: false,
       crossAxisCount: 2,
-      children: getChildren(context),
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
       shrinkWrap: true,
       padding: const EdgeInsets.all(10),
+      children: getChildren(context),
     );
   }
 }

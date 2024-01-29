@@ -20,7 +20,7 @@ class Reminder extends StatelessWidget {
   String nom_jour = "Lundi";
   //final heure = DateFormat("12:30");
   String heure = "10:30";
-  Reminder(this.updateDarkThemeState);
+  Reminder(this.updateDarkThemeState, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,7 @@ class Reminder extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
       child: ElevatedButton(
         style: TextButton.styleFrom(
-            padding: const EdgeInsets.all(20.0),
-            primary: Colors.white,
+            foregroundColor: Colors.white, padding: const EdgeInsets.all(20.0),
             backgroundColor: const Color(0xFF077276),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),

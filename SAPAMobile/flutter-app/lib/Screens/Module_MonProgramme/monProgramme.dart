@@ -21,9 +21,9 @@ class _MonProgrammeState extends State<MonProgramme> {
           ),
           drawer: const MyNavDrawer(),
 
-          body: Center(
+          body: const Center(
             child: Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                   left: 25.0,
                   top: 15.0,
                   right: 25.0,
@@ -32,7 +32,7 @@ class _MonProgrammeState extends State<MonProgramme> {
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
 
                     Text('Information : \n\n 🔨 Cette pages est en cours de construction ! 🔨 '),
 

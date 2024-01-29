@@ -21,7 +21,7 @@ class _MonBoutonDeFormulaireState extends State<MonBoutonDeFormulaire> {
         ElevatedButton(
             style: ButtonStyle(
                 padding: MaterialStateProperty.all<EdgeInsets>(
-                    EdgeInsets.all(0.0)
+                    const EdgeInsets.all(0.0)
                 ),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(

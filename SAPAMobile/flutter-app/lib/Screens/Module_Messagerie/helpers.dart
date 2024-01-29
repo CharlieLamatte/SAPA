@@ -42,6 +42,7 @@ abstract class Helpers {
     } else {
       return null;
     }
+    return null;
   }
 
   static DateTime randomDate() {

@@ -1,5 +1,4 @@
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/old/Archives/SeancesArchives/afficheSeance.dart';
 import 'package:flutter_application_3/old/delayed_animation.dart';
@@ -12,7 +11,7 @@ const d_green = Colors.teal;
 
 ///////////////////////////////////////////////// Main
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -130,8 +129,7 @@ class _ajoutExerciceState extends State<ajoutExercice> {
                 delay: 0,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
-                    primary: d_green,
+                    shape: const StadiumBorder(), backgroundColor: d_green,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 125,
                       vertical: 13,
@@ -309,8 +307,9 @@ class _ExerciceFormState extends State<ExerciceForm> {
                     itemBuilder: (BuildContext context) {
                       return itemsDistance
                           .map<PopupMenuItem<String>>((String value) {
-                        return new PopupMenuItem(
-                            child: new Text(value), value: value);
+                        return PopupMenuItem(
+                            value: value,
+                            child: Text(value));
                       }).toList();
                     },
                   ),
@@ -340,8 +339,9 @@ class _ExerciceFormState extends State<ExerciceForm> {
                     itemBuilder: (BuildContext context) {
                       return itemsPoidsRep
                           .map<PopupMenuItem<String>>((String value) {
-                        return new PopupMenuItem(
-                            child: new Text(value), value: value);
+                        return PopupMenuItem(
+                            value: value,
+                            child: Text(value));
                       }).toList();
                     },
                   ),
@@ -371,8 +371,9 @@ class _ExerciceFormState extends State<ExerciceForm> {
                     itemBuilder: (BuildContext context) {
                       return itemsPoidsRep
                           .map<PopupMenuItem<String>>((String value) {
-                        return new PopupMenuItem(
-                            child: new Text(value), value: value);
+                        return PopupMenuItem(
+                            value: value,
+                            child: Text(value));
                       }).toList();
                     },
                   ),
@@ -426,7 +427,7 @@ class _ExerciceFormState extends State<ExerciceForm> {
                     ),
                   ),
                 ),
-                SizedBox(width: 4),
+                const SizedBox(width: 4),
                 GestureDetector(
                   onTap: () => setState(() => _value = 3),
                   child: Container(

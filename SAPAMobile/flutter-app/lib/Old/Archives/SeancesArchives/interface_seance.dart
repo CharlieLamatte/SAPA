@@ -44,10 +44,10 @@ class _SeancesHomeState extends State<SeancesHome> {
                     //Brique Programme PEPS
                     Row(mainAxisAlignment: MainAxisAlignment.start, children: [
                       // Brique d'affichage de la prochaine séance
-                      Row(
+                      const Row(
                         //  crossAxisAlignment: CrossAxisAlignment.center,
                         //1
-                        children: const [
+                        children: [
                           Text('Prochaine séance prévue le : '),
                           Text('lundi 23 nov., 14h-15h')
                         ],
@@ -307,10 +307,10 @@ class _SeancesHomeState extends State<SeancesHome> {
 Widget _buildPopupDialog(BuildContext context) {
   return AlertDialog(
     title: const Text('Historique complet de mes séances'),
-    content: Column(
+    content: const Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const <Widget>[
+      children: <Widget>[
         Text("Séance 1"),
         Text("Séance 2"),
         Text("Séance 3"),

@@ -129,7 +129,7 @@ class _MonSuiviPepsState extends State<MonSuiviPeps> {
                       _focusedDay = focusedDay;
                     },
                     locale: "fr_FR",
-                    headerStyle: HeaderStyle(
+                    headerStyle: const HeaderStyle(
                       titleCentered: true
                     ),
                   ),

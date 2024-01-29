@@ -1,5 +1,3 @@
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
@@ -115,8 +113,9 @@ class _SeanceFormState extends State<SeanceForm> {
                     },
                     itemBuilder: (BuildContext context) {
                       return items.map<PopupMenuItem<String>>((String value) {
-                        return new PopupMenuItem(
-                            child: new Text(value), value: value);
+                        return PopupMenuItem(
+                            value: value,
+                            child: Text(value));
                       }).toList();
                     },
                   ),

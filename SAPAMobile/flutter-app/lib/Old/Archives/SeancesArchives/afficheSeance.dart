@@ -4,7 +4,7 @@ import 'package:flutter_application_3/old/Archives/SeancesArchives/AjoutExercice
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -44,13 +44,13 @@ class _maSeanceState extends State<maSeance> {
             elevation: 0,
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             leading: IconButton(
-              icon: Icon(Icons.menu_rounded),
+              icon: const Icon(Icons.menu_rounded),
               color: Colors.teal,
               onPressed: () => {}, // TODO
             ),
             actions: [
               IconButton(
-                icon: Icon(Icons.power_settings_new_rounded),
+                icon: const Icon(Icons.power_settings_new_rounded),
                 color: Colors.teal,
                 onPressed: () => {}, // TODO
               ),
@@ -88,8 +88,8 @@ class _maSeanceState extends State<maSeance> {
                       width: 150.0,
                       height: 150.0,
                       alignment: Alignment.center,
-                      margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
-                      decoration: BoxDecoration(
+                      margin: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           fit: BoxFit.fill,
@@ -110,10 +110,10 @@ class _maSeanceState extends State<maSeance> {
                         flex: 4,
                         child: Container(
                           width: 250.0,
-                          margin: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.symmetric(
                             vertical: 20.0,
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal : 20.0,
                             vertical: 2.0,
                           ),
@@ -124,12 +124,12 @@ class _maSeanceState extends State<maSeance> {
                                 color: Theme.of(context).primaryColor,
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Informations sur la séance",
                               style: TextStyle(
                                 color: Colors.white,
@@ -145,7 +145,7 @@ class _maSeanceState extends State<maSeance> {
                           alignment: Alignment.centerRight,
                           // padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                           child: IconButton(
-                            icon: Icon(Icons.create_rounded),
+                            icon: const Icon(Icons.create_rounded),
                             color: Colors.teal,
                             onPressed: () => {}, // TODO
                           ),
@@ -163,13 +163,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Date",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -182,21 +182,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "19/01/2022",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -217,13 +217,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Durée",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -236,21 +236,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "40 min 20 s",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -271,13 +271,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Commentaire",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -290,21 +290,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "J'ai réussi à aller au bout de la séance sans trop de difficultés",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -328,10 +328,10 @@ class _maSeanceState extends State<maSeance> {
                         flex: 4,
                         child: Container(
                           width: 250.0,
-                          margin: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.symmetric(
                             vertical: 20.0,
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal : 20.0,
                             vertical: 2.0,
                           ),
@@ -342,12 +342,12 @@ class _maSeanceState extends State<maSeance> {
                                 color: Theme.of(context).primaryColor,
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Exercice n°X",
                               style: TextStyle(
                                 color: Colors.white,
@@ -363,7 +363,7 @@ class _maSeanceState extends State<maSeance> {
                           alignment: Alignment.centerRight,
                           // padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                           child: IconButton(
-                            icon: Icon(Icons.create_rounded),
+                            icon: const Icon(Icons.create_rounded),
                             color: Colors.teal,
                             onPressed: () => {}, // TODO
                           ),
@@ -381,13 +381,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Temps",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -400,21 +400,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "1 min 45",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -435,13 +435,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Distance",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -454,21 +454,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "200-250 m",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -489,13 +489,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Charge",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -508,21 +508,21 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "2 kg",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -543,13 +543,13 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10.0,
                           ),
                           alignment: Alignment.centerLeft,
                           child : RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               text: "Ressenti",
                               style: TextStyle(
                                 color: Colors.black54,
@@ -562,16 +562,16 @@ class _maSeanceState extends State<maSeance> {
                       Expanded(
                         flex: 2,
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                          padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                          margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
                           alignment: Alignment.centerRight,
                           decoration: BoxDecoration(
-                            color: Color(0xFFD6D6D6),
+                            color: const Color(0xFFD6D6D6),
                             border: Border.all(
-                                color: Color(0xFFD6D6D6),
+                                color: const Color(0xFFD6D6D6),
                                 width: 2.0
                             ),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                                 Radius.circular(5.0)
                             ),
                           ),

@@ -28,25 +28,25 @@ class MyHomePageState extends State<MyHomePage> {
           ),
           drawer: const MyNavDrawer(),
 
-          body: SingleChildScrollView(
+          body: const SingleChildScrollView(
             child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
+                    padding: EdgeInsets.only(
                       left: 20.0,
                       top: 20.0,
                       right: 25.0,
                       bottom: 15.0,
                     ),
                     child : Column(
-                      children: const [
+                      children: [
                         MyHomeReminder(),
                         SizedBox(height: 15.0),
                         MyCategoryGrid(),
                       ],
                     ),
                   ),
-                  const MyMotivationCarrousel(),
+                  MyMotivationCarrousel(),
                 ]
             ),
           ),

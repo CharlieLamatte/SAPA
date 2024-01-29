@@ -138,7 +138,7 @@ class MyLoginPageState extends State<MyLoginPage> {
                                                 style: ElevatedButton.styleFrom(
                                                   // foregroundColor: Theme.of(context).primaryColor,
                                                   // backgroundColor: Theme.of(context).backgroundColor,
-                                                  minimumSize: Size(0, 50),
+                                                  minimumSize: const Size(0, 50),
                                                 ),
                                                 onPressed: () {
                                                   if(_formKey.currentState!.validate()) {
@@ -150,7 +150,7 @@ class MyLoginPageState extends State<MyLoginPage> {
                                                     );
                                                   }
                                                 },
-                                                child: Text(
+                                                child: const Text(
                                                   "Se connecter",
                                                   style: TextStyle(fontSize: 20),
                                                 ),
@@ -235,7 +235,9 @@ class MyLoginPageState extends State<MyLoginPage> {
     } else if (value.length < 8) {
       return ('Le mot de passe doit contenir au moins 8 caractères.'); // TODO voir pour faire revenir le texte à la ligne si besoin
     } else if (!containUppercase(value)) {
-      return ('Le mot de passe doit contenir au moins une majuscule.'); // TODO voir pour faire revenir le texte à la ligne si besoin
+      return ('Le mot de passe doit contenir au moins une lettre majuscule.'); // TODO voir pour faire revenir le texte à la ligne si besoin
+    } else if (!containLowercase(value)) {
+      return ('Le mot de passe doit contenir au moins une lettre minuscule.');
     }
     return null;
   }
@@ -252,5 +254,18 @@ class MyLoginPageState extends State<MyLoginPage> {
       }
     }
     return containUppercase;
+  }
+
+  // ------------------------------------------------------------------------ //
+  // Fonction pour vérifier au moins 1 majuscule dans le mdp ---------------- //
+  bool containLowercase(value) {
+    bool containLowercase = false;
+    for (var i = 0; i < value.length; i++) {
+      if (value[i] == value[i]. toLowerCase()) {
+        containLowercase = true;
+        break;
+      }
+    }
+    return containLowercase;
   }
 }

@@ -1,4 +1,3 @@
-import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Screens/Components/maNavDrawer.dart';
 import 'package:flutter_application_3/Screens/Components/monAppBar.dart';
@@ -17,6 +16,9 @@ class _EmargementState extends State<Emargement> {
   String? margingGroup2;
   String? margingGroup3;
   String? margingGroup4;
+  bool? _value1 = false;
+  bool? _value2 = false;
+  bool? _value3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -45,16 +47,16 @@ class _EmargementState extends State<Emargement> {
                 Table(
                   children: [
                     // première ligne d'en-tête
-                    TableRow(children: [
-                      const Text("Bénéficiaire", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                      const Text("Présence", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                      const Text("Absence", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                      const Text("Excusé", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))
+                    const TableRow(children: [
+                      Text("Bénéficiaire", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                      Text("Présence", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                      Text("Absence", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                      Text("Excusé", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))
                     ]),
 
                     // liste des bénéficiaire à construire automatiquement
                     TableRow(children: [
-                      TableCell(
+                      const TableCell(
                         verticalAlignment: TableCellVerticalAlignment.middle,
                         child: Text("Eugène CURASSO"),
                       ),
@@ -64,6 +66,7 @@ class _EmargementState extends State<Emargement> {
                         onChanged: (value){
                           setState(() {
                             margingGroup1 = value.toString();
+                            _value1 = false;
                           });
                         },
                       ),
@@ -78,12 +81,12 @@ class _EmargementState extends State<Emargement> {
                         },
                       ),
 
-                      RadioListTile(
-                        value: "excuse",
-                        groupValue: margingGroup1,
-                        onChanged: (value){
+                      CheckboxListTile(
+                        controlAffinity: ListTileControlAffinity.leading,
+                        value: _value1,
+                        onChanged: (bool? value){
                           setState(() {
-                            margingGroup1 = value.toString();
+                            _value1 = value;
                           });
                         },
                       ),
@@ -93,7 +96,7 @@ class _EmargementState extends State<Emargement> {
 
 
                     TableRow(children: [
-                      TableCell(
+                      const TableCell(
                         verticalAlignment: TableCellVerticalAlignment.middle,
                         child: Text("Léo WYATT"),
                       ),
@@ -117,12 +120,12 @@ class _EmargementState extends State<Emargement> {
                         },
                       ),
 
-                      RadioListTile(
-                        value: "excuse",
-                        groupValue: margingGroup2,
-                        onChanged: (value){
+                      CheckboxListTile(
+                        controlAffinity: ListTileControlAffinity.leading,
+                        value: _value2,
+                        onChanged: (bool? value){
                           setState(() {
-                            margingGroup2 = value.toString();
+                            _value2 = value;
                           });
                         },
                       ),
@@ -132,7 +135,7 @@ class _EmargementState extends State<Emargement> {
 
 
                     TableRow(children: [
-                      TableCell(
+                      const TableCell(
                         verticalAlignment: TableCellVerticalAlignment.middle,
                         child: Text("Jaques FRANC"),
                       ),
@@ -156,12 +159,12 @@ class _EmargementState extends State<Emargement> {
                         },
                       ),
 
-                      RadioListTile(
-                        value: "excuse",
-                        groupValue: margingGroup3,
-                        onChanged: (value){
+                      CheckboxListTile(
+                        controlAffinity: ListTileControlAffinity.leading,
+                        value: _value3,
+                        onChanged: (bool? value){
                           setState(() {
-                            margingGroup3 = value.toString();
+                            _value3 = value;
                           });
                         },
                       ),
@@ -205,7 +208,9 @@ class _EmargementState extends State<Emargement> {
                             ),
                           ),
 
-                          onPressed: () { },
+                          onPressed: () {
+                            //mettre le retour à la bonne séance
+                          },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -351,5 +356,4 @@ class _EmargementState extends State<Emargement> {
       );
 
   }
-
 }

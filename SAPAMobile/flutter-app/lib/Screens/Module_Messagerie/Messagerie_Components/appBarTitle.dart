@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../Messagerie_Widgets/avatar.dart';
 import 'package:flutter_application_3/models/messageData.dart';

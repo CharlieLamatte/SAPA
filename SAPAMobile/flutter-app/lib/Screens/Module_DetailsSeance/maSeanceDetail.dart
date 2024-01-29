@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Screens/Components/maNavDrawer.dart';
 import 'package:flutter_application_3/Screens/Components/monAppBar.dart';
 import 'package:flutter_application_3/Screens/Components/monTitreDeCategorie.dart';
-import 'dart:developer' as developer;
+import 'package:flutter_application_3/Screens/Module_ListeSeance/listeSeanceCal.dart';
 
 import '../Module_Emargement/Emargement.dart';
 import 'monChampDeSeance.dart';
@@ -78,13 +78,69 @@ class _MaSeanceState extends State<MaSeance> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
 
+                      Container(
+                          decoration: BoxDecoration(
+                            borderRadius: const BorderRadius.all(
+                                Radius.circular(100.0)
+                            ),
+                            color: Theme
+                                .of(context)
+                                .primaryColorLight,
+                          ),
+                          width: 115.0,
+                          height: 40.0,
+                          child:
+                          ElevatedButton(
+                            style: ButtonStyle(
+                              shape: MaterialStateProperty.all<
+                                  RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(
+                                        10.0),
+                                  )
+                              ),
+                              backgroundColor: MaterialStateProperty.all<
+                                  Color>(
+                                  Theme
+                                      .of(context)
+                                      .primaryColorLight
+                              ),
+                            ),
+
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                    builder: (context) => const ListeSeanceCal(),
+                                    )
+                                );
+                            },
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const SizedBox(
+                                    width: 3.0,
+                                  ),
+                                  Text(
+                                    'Retour',
+                                    style: TextStyle(
+                                      color: Theme
+                                          .of(context)
+                                          .primaryColor,
+                                    ),
+                                  ),
+                                ]
+                            ),
+                          )
+                      ),
+
                       ////////////////////////////////////////////////////
                       // Partie infos séance ///////////////////////
                       ExpandablePanel(
                         // Titre de la partie //////////////////////
                         header:
-                        Row(
-                            children: const [
+                        const Row(
+                            children: [
                               SizedBox(
                                 height: 50.0,
                               ),

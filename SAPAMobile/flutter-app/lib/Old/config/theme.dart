@@ -6,7 +6,6 @@ ThemeData theme(){
     primaryColorDark: Colors.teal[900],
     primaryColorLight: Colors.teal[100],
 
-    scaffoldBackgroundColor: Colors.white,
-    backgroundColor: Colors.blueGrey,
+    scaffoldBackgroundColor: Colors.white, colorScheme: const ColorScheme(background: Colors.blueGrey),
   );
 }

@@ -7,7 +7,7 @@ import 'package:flutter_application_3/old/views/components/reminder_home.dart';
 class HomePage extends StatefulWidget {
   final Function() updateDarkThemeState;
 
-  HomePage(this.updateDarkThemeState);
+  const HomePage(this.updateDarkThemeState, {Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => HomePageState(updateDarkThemeState);
@@ -40,7 +40,7 @@ class HomePageState extends State<HomePage> {
               'Bon retour parmi nous $loggedUsername !',
             ),*/
             CategoryGrid(updateDarkThemeState),
-            MotivationCarousel(),
+            const MotivationCarousel(),
           ],
         ),
       ),

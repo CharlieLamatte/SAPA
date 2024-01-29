@@ -28,10 +28,10 @@ class MonChampNotifState extends State<MonChampNotif> {
           children:<Widget>[
             Container(
               //padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-              padding: EdgeInsets.all(3.0),
+              padding: const EdgeInsets.all(3.0),
               //alignment: Alignment.topLeft,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(136, 198, 76, 1),
+                color: const Color.fromRGBO(136, 198, 76, 1),
                 border: Border.all(
                     color: Theme.of(context).focusColor,
                     width: 1.0
@@ -51,7 +51,7 @@ class MonChampNotifState extends State<MonChampNotif> {
             ),
             Container(
               //padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-              padding: EdgeInsets.all(3.0),
+              padding: const EdgeInsets.all(3.0),
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
                 color: Theme.of(context).hoverColor,

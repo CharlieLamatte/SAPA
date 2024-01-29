@@ -98,7 +98,7 @@ class MessageTitle extends StatelessWidget {
                       width: 18,
                       height: 18,
                       decoration: BoxDecoration(
-                        color: Theme.of(context).backgroundColor,
+                        color: Theme.of(context).colorScheme.background,
                         shape: BoxShape.circle,
                       ),
                       child: Center(

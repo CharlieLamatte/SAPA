@@ -23,11 +23,10 @@ class _MyHomeReminderState extends State<MyHomeReminder> {
           children: [
             ElevatedButton(
               style: TextButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
+                foregroundColor: Theme.of(context).splashColor, padding: const EdgeInsets.symmetric(
                     vertical: 15.0,
                     horizontal: 15.0
                 ),
-                primary: Theme.of(context).splashColor,
                 backgroundColor: Theme.of(context).primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),

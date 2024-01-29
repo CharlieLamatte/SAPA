@@ -6,7 +6,6 @@ import 'package:flutter_application_3/Screens/Components/maNavDrawer.dart';
 import 'package:flutter_application_3/Screens/Components/monAppBar.dart';
 import 'package:flutter_application_3/Old/Module_Profil/profil/screens/pageProfil/monTitreDeCategorie.dart';
 import 'package:flutter_application_3/Screens/Module_Profil/Profil_Components/monChampDuProfil.dart';
-import 'package:flutter_application_3/Screens/Module_Profil/monCorpsForm.dart';
 import 'package:image_picker/image_picker.dart';
 
 class MonProfile extends StatefulWidget {
@@ -21,7 +20,7 @@ class _MonProfileState extends State<MonProfile> {
 
   final bool _photo = true;
 
-  final String? _pdp = "assets/kirua.jpg";
+  final String _pdp = "assets/kirua.jpg";
   TextEditingController dateinput = TextEditingController();
 
   /*List infoPersoList = [
@@ -89,12 +88,12 @@ class _MonProfileState extends State<MonProfile> {
   List<String> mcPoids  = ["Poids", "49.0 kg"];
   List<String> mcImc    = ["IMC"];
 
-  final double? _taille = 1.58;
-  final double? _poids = 49.0;
+  final double _taille = 1.58;
+  final double _poids = 49.0;
 
   // calcul IMC
-  calculIMC(double _taille, double _poids) {
-    return (_poids/pow(_taille, 2)).toStringAsFixed(1);
+  calculIMC(double taille, double poids) {
+    return (poids/pow(taille, 2)).toStringAsFixed(1);
   }
 
   @override
@@ -121,7 +120,7 @@ class _MonProfileState extends State<MonProfile> {
       cuTelPort,
     ];
 
-    var IMC = calculIMC(_taille!, _poids!);
+    var IMC = calculIMC(_taille, _poids);
     mcImc.add(IMC);
 
     List<List<String>> monCorps = [
@@ -183,7 +182,7 @@ class _MonProfileState extends State<MonProfile> {
                                 fit: BoxFit.fill,
                                 image:
                                 _photo
-                                    ? AssetImage(_pdp!)
+                                    ? AssetImage(_pdp)
                                     : const AssetImage("assets/avatar.png"),
                               ),
                             ),
@@ -241,8 +240,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                           header:
-                          Row(
-                              children: const [
+                          const Row(
+                              children: [
                                 SizedBox(
                                   height: 50.0,
                                 ),
@@ -443,8 +442,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                             header:
-                            Row(
-                                children: const [
+                            const Row(
+                                children: [
                                   SizedBox(
                                     height: 50.0,
                                   ),
@@ -524,8 +523,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                             header:
-                            Row(
-                                children: const [
+                            const Row(
+                                children: [
                                   SizedBox(
                                     height: 50.0,
                                   ),

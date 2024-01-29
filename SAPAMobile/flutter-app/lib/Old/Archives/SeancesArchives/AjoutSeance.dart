@@ -1,5 +1,4 @@
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/old/delayed_animation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -13,7 +12,7 @@ const d_green = Colors.teal;
 
 ///////////////////////////////////////////////// Main
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -131,8 +130,7 @@ class _ajoutSeanceState extends State<ajoutSeance> {
               delay: 0,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  shape: const StadiumBorder(),
-                  primary: d_green,
+                  shape: const StadiumBorder(), backgroundColor: d_green,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 125,
                     vertical: 13,
@@ -243,8 +241,9 @@ class _SeanceFormState extends State<SeanceForm> {
                     },
                     itemBuilder: (BuildContext context) {
                       return items.map<PopupMenuItem<String>>((String value) {
-                        return new PopupMenuItem(
-                            child: new Text(value), value: value);
+                        return PopupMenuItem(
+                            value: value,
+                            child: Text(value));
                       }).toList();
                     },
                   ),

@@ -37,19 +37,19 @@ class _afficheResultatsState extends State<afficheResultats> {
             ),
             
             // Scroll view ///////////////////////////////////////////////////////
-            body: Center(
+            body: const Center(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 20.0),
+                padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Resultats()
                   ],
                 ),
               )
             ),
             
-            bottomNavigationBar: navigationBar(),
+            bottomNavigationBar: const navigationBar(),
           )
       );
   }
@@ -105,7 +105,7 @@ class _ResultatsState extends State<Resultats> {
     return Container(
       child: Column(
         children: [
-          filtreBar(),
+          const filtreBar(),
            Column(
             children: ActiviteList.map((activite) {
               return ActiviteCard(activite);

@@ -4,7 +4,7 @@ import 'package:flutter_application_3/old/views/components/nav_drawer.dart';
 class ProgressPage extends StatefulWidget {
   final Function() updateDarkThemeState;
 
-  const ProgressPage(this.updateDarkThemeState);
+  const ProgressPage(this.updateDarkThemeState, {Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() =>

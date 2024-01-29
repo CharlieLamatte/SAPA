@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 
 class ActiviteCard extends StatelessWidget {
   final Map activiteData;
-  ActiviteCard(this.activiteData);
+  const ActiviteCard(this.activiteData, {Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       height: 75,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.all(
+        borderRadius: const BorderRadius.all(
           Radius.circular(18),
         ),
         boxShadow: [
@@ -22,14 +22,14 @@ class ActiviteCard extends StatelessWidget {
             color: Colors.grey.shade200,
             spreadRadius: 4,
             blurRadius: 6,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+            margin: const EdgeInsets.fromLTRB(10, 10, 10, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -44,7 +44,7 @@ class ActiviteCard extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

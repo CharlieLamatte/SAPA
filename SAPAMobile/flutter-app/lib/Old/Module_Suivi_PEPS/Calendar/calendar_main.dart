@@ -69,7 +69,7 @@ class _StartPageState extends State<StartPage> {
           child: const Text('Events'),
           onPressed: () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => SuiviPepsCalendrier()),
+            MaterialPageRoute(builder: (_) => const SuiviPepsCalendrier()),
           ),
         ),
       );

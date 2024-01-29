@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PhotoDeProfilForm extends StatefulWidget {
@@ -20,13 +19,13 @@ class _PhotoDeProfilFormState extends State<PhotoDeProfilForm> {
             elevation: 0,
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             leading: IconButton(
-              icon: Icon(Icons.menu_rounded),
+              icon: const Icon(Icons.menu_rounded),
               color: Colors.teal,
               onPressed: () => {}, // TODO
             ),
             actions: [
               IconButton(
-                icon: Icon(Icons.power_settings_new_rounded),
+                icon: const Icon(Icons.power_settings_new_rounded),
                 color: Colors.teal,
                 onPressed: () => {}, // TODO
               ),

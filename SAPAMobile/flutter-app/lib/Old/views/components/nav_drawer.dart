@@ -6,7 +6,7 @@ import 'package:flutter_application_3/old/views/pages/module_MaProgression/progr
 class NavDrawer extends StatelessWidget {
   final Function() updateDarkThemeState;
 
-  NavDrawer(this.updateDarkThemeState);
+  const NavDrawer(this.updateDarkThemeState, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +15,11 @@ class NavDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
-            child: Text(' '),
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/logo_ss86.png"),
                     fit: BoxFit.contain)),
+            child: Text(' '),
           ),
           ListTile(
             leading: Icon(

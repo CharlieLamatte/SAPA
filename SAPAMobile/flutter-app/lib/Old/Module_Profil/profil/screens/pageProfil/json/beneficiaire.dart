@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'dart:convert';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'contact.dart';

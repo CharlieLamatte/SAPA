@@ -114,7 +114,7 @@ class _ListeSeanceCalState extends State<ListeSeanceCal> {
                       style: ElevatedButton.styleFrom(
                         minimumSize: const Size.fromHeight(40),
                       ),
-                      child: Text("Liste des séances à venir")
+                      child: const Text("Liste des séances à venir")
                   ),
                   TableCalendar<Evenement>(
                     firstDay: kFirstDay,
@@ -144,7 +144,7 @@ class _ListeSeanceCalState extends State<ListeSeanceCal> {
                       _focusedDay = focusedDay;
                     },
                     locale: "fr_FR",
-                    headerStyle: HeaderStyle(
+                    headerStyle: const HeaderStyle(
                         titleCentered: true
                     ),
                   ),

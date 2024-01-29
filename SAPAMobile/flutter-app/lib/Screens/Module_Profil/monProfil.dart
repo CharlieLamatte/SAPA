@@ -19,7 +19,7 @@ class MonProfile extends StatefulWidget {
 
 class _MonProfileState extends State<MonProfile> {
 
-  final String? _pdp = "assets/kirua.jpg";
+  final String _pdp = "assets/kirua.jpg";
 
   // listes "Informations personnelles"
   List<String> ipPrenom     = ["Prénom", "Kirua"];
@@ -45,12 +45,12 @@ class _MonProfileState extends State<MonProfile> {
   List<String> mcPoids  = ["Poids", "49.0 kg"];
   List<String> mcImc    = ["IMC"];
   // pour le calcul de l'IMC
-  final double? _taille = 1.58;
-  final double? _poids = 49.0;
+  final double _taille = 1.58;
+  final double _poids = 49.0;
 
   // calcul IMC
-  calculIMC(double _taille, double _poids) {
-    return (_poids/pow(_taille, 2)).toStringAsFixed(1);
+  calculIMC(double taille, double poids) {
+    return (poids/pow(taille, 2)).toStringAsFixed(1);
   }
 
   @override
@@ -79,7 +79,7 @@ class _MonProfileState extends State<MonProfile> {
       cuTelPort,
     ];
 
-    var imc = calculIMC(_taille!, _poids!);
+    var imc = calculIMC(_taille, _poids);
     mcImc.add(imc);
 
     List<List<String>> monCorps = [
@@ -126,7 +126,7 @@ class _MonProfileState extends State<MonProfile> {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: AssetImage(_pdp!)
+                                  image: AssetImage(_pdp)
                               ),
                             ),
                             child: Align(
@@ -171,8 +171,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                           header:
-                          Row(
-                              children: const [
+                          const Row(
+                              children: [
                                 SizedBox(
                                   height: 50.0,
                                 ),
@@ -324,8 +324,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                             header:
-                            Row(
-                                children: const [
+                            const Row(
+                                children: [
                                   SizedBox(
                                     height: 50.0,
                                   ),
@@ -403,8 +403,8 @@ class _MonProfileState extends State<MonProfile> {
                         ExpandablePanel(
                           // Titre de la partie //////////////////////
                             header:
-                            Row(
-                                children: const [
+                            const Row(
+                                children: [
                                   SizedBox(
                                     height: 50.0,
                                   ),

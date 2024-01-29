@@ -21,8 +21,8 @@ class _MyScrollViewState extends State<MyScrollView> {
           ),
           drawer: const MyNavDrawer(),
 
-          body: Padding(
-            padding: const EdgeInsets.only(
+          body: const Padding(
+            padding: EdgeInsets.only(
                 left: 25.0,
                 top: 15.0,
                 right: 25.0,
@@ -42,7 +42,7 @@ class _MyScrollViewState extends State<MyScrollView> {
                   child: SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
 
                         Center(
                           child: Text('🔨 Cette pages est en cours de construction !')
@@ -55,7 +55,7 @@ class _MyScrollViewState extends State<MyScrollView> {
                   ),
                 ),
 
-                const SizedBox(
+                SizedBox(
                   height: 15.0,
                 ),
 

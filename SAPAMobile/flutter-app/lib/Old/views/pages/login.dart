@@ -115,17 +115,16 @@ class MyLoginPageState extends State<MyLoginPage> {
                         ),
                         child: ElevatedButton(
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
-                              backgroundColor: const Color(0xFF077276),
+                              foregroundColor: Colors.white, backgroundColor: const Color(0xFF077276),
                             ),
+                            onPressed: onLogin,
                             child: const Text(
                               'Connexion',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20
                               ),
-                            ),
-                            onPressed: onLogin
+                            )
                         ),
                       ),
 

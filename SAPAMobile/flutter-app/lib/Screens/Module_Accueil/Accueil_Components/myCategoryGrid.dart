@@ -29,7 +29,7 @@ class _MyCategoryGridState extends State<MyCategoryGrid> {
           ElevatedButton(
             style: ButtonStyle(
               padding: MaterialStateProperty.all<EdgeInsets>(
-                EdgeInsets.all(0.0)
+                const EdgeInsets.all(0.0)
               ),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
@@ -161,11 +161,11 @@ class _MyCategoryGridState extends State<MyCategoryGrid> {
     return GridView.count(
       primary: false,
       crossAxisCount: 2,
-      children: getChildren(context),
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
       shrinkWrap: true,
       padding: const EdgeInsets.all(10),
+      children: getChildren(context),
     );
   }
 }

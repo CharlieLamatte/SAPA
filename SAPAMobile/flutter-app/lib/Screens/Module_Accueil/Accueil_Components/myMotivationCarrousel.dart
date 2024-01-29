@@ -36,11 +36,11 @@ class _MyMotivationCarrouselState extends State<MyMotivationCarrousel> {
           ),
           child: SizedBox(
             child: Card(
+              elevation: 2,
               child: Image(
                 image: AssetImage("assets/carrouselAccueil/$img"),
                 fit: BoxFit.fitWidth,
               ),
-              elevation: 2,
             ),
           ),
         );

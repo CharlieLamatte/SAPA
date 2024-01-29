@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter_application_3/Screens/Module_Accueil/myLoginPage.dart';
-import 'package:flutter_application_3/Screens/Module_ListeSeance/listeSeanceCal.dart';
 import 'package:flutter_application_3/Screens/Module_Profil/monProfil.dart';
-import 'package:flutter_application_3/Screens/Module_DetailsSeance/maSeanceDetail.dart';
 import 'package:flutter_application_3/Screens/Module_Notification/notifications.dart';
 import '../Module_Accueil_Intervenant/myHome.dart';
 
@@ -83,7 +81,7 @@ class _MyNavDrawerState extends State<MyNavDrawer> {
 
           // Theme sombre //////////////////////////////////////////////////////
           SwitchListTile(
-            title: Text('Thème sombre'),
+            title: const Text('Thème sombre'),
             value: darkMode,
             activeColor: Theme.of(context).primaryColor,
             onChanged: (bool value) {
@@ -140,7 +138,7 @@ class _MyNavDrawerState extends State<MyNavDrawer> {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => MyHomePage(),
+                builder: (context) => const MyHomePage(),
               ),
             ),
           ),

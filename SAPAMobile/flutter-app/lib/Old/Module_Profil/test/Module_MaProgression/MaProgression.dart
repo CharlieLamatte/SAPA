@@ -18,7 +18,7 @@ class MaProgressionScreenState extends State<MaProgressionScreen> {
         backgroundColor: const Color(0xFF077276),
         elevation: 0.0,
       ),
-      drawer: MyNavDrawer(),
+      drawer: const MyNavDrawer(),
       //backgroundColor: Colors.grey[400],
       body: Container(
         decoration: const BoxDecoration(),

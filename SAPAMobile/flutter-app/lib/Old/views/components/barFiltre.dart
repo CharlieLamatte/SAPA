@@ -24,12 +24,12 @@ class _filtreBarState extends State<filtreBar> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+          const Text(
             'XXX résutats de recherche',
           ),
           Row(
             children: [
-              Text(
+              const Text(
                 'Filtre',
               ),
               IconButton(

@@ -55,7 +55,7 @@ class _ListeSeanceListState extends State<ListeSeanceList> {
                           style: ElevatedButton.styleFrom(
                             minimumSize: const Size.fromHeight(40),
                           ),
-                          child: Text("Calendrier des séances à venir")),
+                          child: const Text("Calendrier des séances à venir")),
                       Expanded(
                           child: SfCalendar(
                             view: CalendarView.schedule,
@@ -65,7 +65,7 @@ class _ListeSeanceListState extends State<ListeSeanceList> {
                               monthHeaderSettings: MonthHeaderSettings(
                                 backgroundColor: Theme.of(context).primaryColor,
                               ),
-                              appointmentTextStyle: TextStyle(
+                              appointmentTextStyle: const TextStyle(
                                 color: Colors.black
                               )
                             ),

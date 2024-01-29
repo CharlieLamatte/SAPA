@@ -17,6 +17,8 @@ class MotivationCarousel extends StatelessWidget {
     "motivation12.png",
   ];
 
+  const MotivationCarousel({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
@@ -25,11 +27,11 @@ class MotivationCarousel extends StatelessWidget {
             padding: const EdgeInsets.only(right: 0),
             child: SizedBox(
               child: Card(
+                elevation: 2,
                 child: Image(
                   image: AssetImage("assets/carrouselHome/$img"),
                   fit: BoxFit.fitWidth,
                 ),
-                elevation: 2,
               ),
             ),
           );

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Screens/Components/maNavDrawer.dart';
 import 'package:flutter_application_3/Screens/Components/monAppBar.dart';
-import 'package:flutter_application_3/Screens/Module_SuiviPeps/SuiviPeps_Utils/evenement.dart';
 import 'monChampNotif.dart';
 import 'listeNotif.dart';
 
@@ -145,7 +144,7 @@ class _NotificationsState extends State<Notifications> {
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
                     title: MonChampNotif(
-                      myLabel: lesNotifs[index].dateNotif + " - " + lesNotifs[index].typeSeance,
+                      myLabel: "${lesNotifs[index].dateNotif} - ${lesNotifs[index].typeSeance}",
                       myData: lesNotifs[index].commentaireNotif,
                     ),
                   );

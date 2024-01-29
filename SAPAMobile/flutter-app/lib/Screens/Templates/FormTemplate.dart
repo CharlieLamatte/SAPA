@@ -19,9 +19,9 @@ class _FormulaireState extends State<Formulaire> {
       // Formulaire /////////////////////////////////////
       Form(
         key: _formKey,
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: const [
+          children: [
 
             // TODO : champs du formulaire
 

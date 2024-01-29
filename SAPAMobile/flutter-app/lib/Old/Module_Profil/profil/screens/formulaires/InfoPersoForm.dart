@@ -12,14 +12,14 @@ class InfoPersoForm extends StatefulWidget {
 class _InfoPersoFormState extends State<InfoPersoForm> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  bool _infoP = true;
+  final bool _infoP = true;
 
   String _prenom = "Kirua";
   String _nom = "Zoldick";
  // String _date = "07/12/2009";
   String _email = "kz@gmail.com";
   String _tel = "0102030405";
-  TextEditingController _dateinput = TextEditingController();
+  final TextEditingController _dateinput = TextEditingController();
 
   final RegExp _prenomNomRegex = RegExp(r"(?:^[A-Z]([a-z]+)$|^(^[A-Z][a-z]+)\-([A-Z]([a-z]+)$)$)");
   final RegExp _dateRegex = RegExp(r"^([0-2][1-9]|3[0-1])\/(0[1-9]|1[0-2])\/(19|20)[0-9]{2}$");
@@ -36,7 +36,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Theme.of(context).primaryColor,
-          title: Text('Mon Profil'),
+          title: const Text('Mon Profil'),
           // leading: IconButton(
           //   icon: Icon(Icons.menu_rounded),
           //   color: Theme.of(context).scaffoldBackgroundColor,
@@ -52,7 +52,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
         ),
 
         body:Padding(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 25.0,
             right: 25.0,
             top: 15.0,
@@ -114,7 +114,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Prénom',
                                     style: TextStyle(
                                       fontSize: 18.0,
@@ -137,18 +137,18 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                                         : null,
                                     decoration: InputDecoration(
                                       hintText: "Prénom",
-                                      contentPadding: EdgeInsets.symmetric(
+                                      contentPadding: const EdgeInsets.symmetric(
                                           horizontal: 10.0
                                       ),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
@@ -168,7 +168,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Nom',
                                     style: TextStyle(
                                       fontSize: 18.0,
@@ -191,12 +191,12 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                                         : null,
                                     decoration: InputDecoration(
                                       hintText: "Nom",
-                                      contentPadding: EdgeInsets.symmetric(
+                                      contentPadding: const EdgeInsets.symmetric(
                                           horizontal: 10.0
                                       ),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
@@ -216,7 +216,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Date de Naissance',
                                     style: TextStyle(
                                       fontSize: 18.0,
@@ -240,16 +240,16 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                                     controller: _dateinput,
                                     decoration: InputDecoration(
                                       hintText: "jj/mm/aaaa",
-                                      contentPadding: EdgeInsets.symmetric(
+                                      contentPadding: const EdgeInsets.symmetric(
                                           horizontal: 10.0
                                       ),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      suffixIcon: InkWell(
+                                      suffixIcon: const InkWell(
                                         child: Icon(Icons.calendar_today),
                                       ),
                                     ),
@@ -289,7 +289,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Email',
                                     style: TextStyle(
                                       fontSize: 18.0,
@@ -312,16 +312,16 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                                         : null,
                                     decoration: InputDecoration(
                                       hintText: "Email",
-                                      contentPadding: EdgeInsets.symmetric(
+                                      contentPadding: const EdgeInsets.symmetric(
                                           horizontal: 10.0
                                       ),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      suffixIcon: InkWell(
+                                      suffixIcon: const InkWell(
                                         child: Icon(Icons.email_rounded),
                                       ),
                                     ),
@@ -340,7 +340,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Téléphone',
                                     style: TextStyle(
                                       fontSize: 18.0,
@@ -363,16 +363,16 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                                         : null,
                                     decoration: InputDecoration(
                                       hintText: "Téléphone",
-                                      contentPadding: EdgeInsets.symmetric(
+                                      contentPadding: const EdgeInsets.symmetric(
                                           horizontal: 10.0
                                       ),
                                       border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      suffixIcon: InkWell(
+                                      suffixIcon: const InkWell(
                                         child: Icon(Icons.phone),
                                       ),
                                     ),
@@ -388,7 +388,7 @@ class _InfoPersoFormState extends State<InfoPersoForm> {
                 ),
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 15.0,
               ),
 
