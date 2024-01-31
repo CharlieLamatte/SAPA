@@ -1,9 +1,11 @@
 import 'dart:collection';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
+import 'package:http/http.dart' as http;
 
 class Evenement {
   final String title;
@@ -39,27 +41,29 @@ final kEvents = LinkedHashMap<DateTime, List<Evenement>>(
   hashCode: getHashCode,
 )..addAll(addEvents);
 
-final addEvents = {
-  kToday: [
-    Evenement(
-        title: "Rugby",
-        description: "La description",
-        from: DateTime.now(),
-        to: DateTime.now().add(const Duration(hours: 1, minutes: 30))),
-    Evenement(
-        title: "Rugby",
-        description: "La description",
-        from: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
-        to: DateTime.now().add(const Duration(hours: 3)))
-  ],
-  DateTime.now().add(const Duration(days: 2)): [
-    Evenement(
-        title: "Gym",
-        description: "Ma description",
-        from: DateTime.now().add(const Duration(days: 2)),
-        to: DateTime.now().add(const Duration(days: 2, hours: 2))),
-  ]
-};
+Map<DateTime, List<Evenement>> addEvents = {};
+
+//final addEvents = {
+//  kToday: [
+//    Evenement(
+//        title: "Rugby",
+//        description: "La description",
+//        from: DateTime.now(),
+//        to: DateTime.now().add(const Duration(hours: 1, minutes: 30))),
+//    Evenement(
+//        title: "Rugby",
+//        description: "La description",
+//        from: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
+//        to: DateTime.now().add(const Duration(hours: 3)))
+//  ],
+// DateTime.now().add(const Duration(days: 2)): [
+//    Evenement(
+//        title: "Gym",
+//        description: "Ma description",
+//        from: DateTime.now().add(const Duration(days: 2)),
+//        to: DateTime.now().add(const Duration(days: 2, hours: 2))),
+//  ]
+//};
 
 int getHashCode(DateTime key) {
   return key.day * 1000000 + key.month * 10000 + key.year;
@@ -84,23 +88,76 @@ class MeetingDataSource extends CalendarDataSource {
   }
 }
 
-final List<Appointment> sampleData = [
-  Appointment(
-    subject: "Rugby",
-    startTime: DateTime.now(),
-    endTime: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
-    color: const Color(0xFFD6D6D6),
-  ),
-  Appointment(
-    subject: "Rugby",
-    startTime: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
-    endTime: DateTime.now().add(const Duration(hours: 3)),
-    color: const Color(0xFFD6D6D6),
-  ),
-  Appointment(
-    subject: "Gym",
-    startTime: DateTime.now().add(const Duration(days: 2)),
-    endTime: DateTime.now().add(const Duration(days: 2, hours: 2)),
-    color: const Color(0xFFD6D6D6),
-  ),
-];
+List<Appointment> sampleData = [];
+
+Future<void> fetchEvents() async {
+  try {
+    final response = await http.post(
+      'Seances/ReadAllSeance.php' as Uri,
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'id_user': '92'}), // Replace with actual user ID
+    );
+
+    if (response.statusCode == 200) {
+      List<dynamic> decodedData = json.decode(response.body);
+
+      // Convert the decoded data to the required format
+      addEvents = {};
+      for (dynamic eventData in decodedData) {
+        DateTime date = DateTime.parse(eventData['heure_debut']);
+        if (!addEvents.containsKey(date)) {
+          addEvents[date] = [];
+        }
+        addEvents[date]!.add(
+          Evenement(
+            title: eventData['type_seance'],
+            description: eventData['nom_creneau'],
+            from: DateTime.parse(eventData['heure_debut']),
+            to: DateTime.parse(eventData['heure_fin']),
+          ),
+        );
+      }
+
+      kEvents.clear();
+      kEvents.addAll(addEvents);
+
+      // Update the 'sampleData' variable if you need it for something else
+      sampleData = addEvents.entries
+          .expand((entry) => entry.value)
+          .map((event) => Appointment(
+                subject: event.title,
+                startTime: event.from,
+                endTime: event.to,
+                color: const Color(0xFFD6D6D6),
+              ))
+          .toList();
+    } else {
+      // Handle error when fetching data from the server
+      print('Error fetching events: ${response.statusCode}');
+    }
+  } catch (e) {
+    // Handle other errors
+    print('Error fetching events: $e');
+  }
+}
+
+//final List<Appointment> sampleData = [
+//  Appointment(
+//    subject: "Rugby",
+//    startTime: DateTime.now(),
+//    endTime: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
+//    color: const Color(0xFFD6D6D6),
+//  ),
+//  Appointment(
+//    subject: "Rugby",
+//    startTime: DateTime.now().add(const Duration(hours: 1, minutes: 30)),
+//    endTime: DateTime.now().add(const Duration(hours: 3)),
+//    color: const Color(0xFFD6D6D6),
+//  ),
+//  Appointment(
+//    subject: "Gym",
+//    startTime: DateTime.now().add(const Duration(days: 2)),
+//    endTime: DateTime.now().add(const Duration(days: 2, hours: 2)),
+//    color: const Color(0xFFD6D6D6),
+//  ),
+//];
